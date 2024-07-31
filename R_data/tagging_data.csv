@@ -1,0 +1,151 @@
+Frequency,Tagdate,Length_mm,Location,Loc_description,Latitude,Longitude,Temp_c
+34-11,7/24/2021,287,Nome Creek,Above Bridge,65.3581,-146.6131,11
+34-12,7/24/2021,263,Nome Creek,Above Bridge,65.3564,-146.6167,11
+34-13,7/24/2021,375,Nome Creek,Above Bridge,65.3531,-146.6259,11
+34-14,7/24/2021,312,Nome Creek,Above Bridge,65.3511,-146.6390,11
+34-15,7/24/2021,279,Nome Creek,Above Bridge,65.3511,-146.6390,11
+34-16,7/24/2021,275,Nome Creek,Above Put-In Point,65.3678,-147.0860,-
+34-17,7/24/2021,265,Nome Creek,Above Put-In Point,65.3653,-147.0797,10
+34-18,7/24/2021,262,Nome Creek,Above Put-In Point,65.3659,-147.0778,10
+34-19,7/24/2021,268,Nome Creek,Above Put-In Point,65.3674,-147.0791,10
+34-20,7/12/2021,325,Beaver Creek,Beaver Ck Float,65.4570,-147.7180,11
+34-21,7/12/2021,326,Nome Creek,Sec 3,65.3356,-146.7325,10.5
+34-22,7/12/2021,364,Nome Creek,Sec 3,65.3408,-146.7120,10.5
+34-23,7/13/2021,265,Nome Creek,Sec 4,65.3293,-146.7898,12.4
+34-24,7/13/2021,302,Nome Creek,Sec 5,65.3338,-146.8391,13.5
+34-25,7/12/2021,265,Nome Creek,Sec 3,65.3397,-146.7151,10.5
+34-26,7/14/2021,310,Nome Creek,Sec 8,65.3491,-147.0034,9
+34-27,7/13/2021,253,Nome Creek,Sec 4,65.3293,-146.7898,12.4
+34-28,7/12/2021,351,Nome Creek,Sec 4,65.3303,-146.7638,14.5
+34-29,7/13/2021,247,Nome Creek,Sec 4,65.3332,-146.8126,11.3
+34-30,7/12/2021,248,Nome Creek,Sec 3,65.3397,-146.7151,10.5
+34-31,7/13/2021,349,Nome Creek,Sec 5,65.3338,-146.8391,13.5
+34-32,7/13/2021,275,Nome Creek,Sec 5,65.3338,-146.8391,13.5
+34-33,7/14/2021,330,Nome Creek,Sec 7,65.3386,-146.9590,9.4
+34-34,7/13/2021,255,Nome Creek,Sec 5,65.3342,-146.8337,13.5
+34-35,7/13/2021,295,Nome Creek,Sec 4,65.3336,-146.8146,11.3
+34-36,7/13/2021,308,Nome Creek,Sec 4,65.3336,-146.8146,11.3
+34-37,7/14/2021,283,Nome Creek,Sec 5,65.3364,-146.8654,9.5
+34-38,7/14/2021,346,Nome Creek,Sec 5,65.3354,-146.8769,9.5
+34-39,7/14/2021,332,Nome Creek,Sec 6,65.3360,-146.8983,-
+34-40,7/14/2021,358,Nome Creek,Sec 6,65.3372,-146.9030,-
+34-41,7/14/2021,338,Nome Creek,Sec 6,65.3372,-146.9030,-
+34-42,7/14/2021,344,Nome Creek,Sec 6,65.3384,-146.9138,-
+34-43,7/14/2021,290,Nome Creek,Sec 8,65.3491,-147.0034,9
+34-44,7/14/2021,315,Nome Creek,Sec 8,65.3546,-147.0186,9
+34-45,7/14/2021,325,Nome Creek,Sec 7,65.3405,-146.9864,9
+34-46,7/14/2021,305,Nome Creek,Sec 8,65.3546,-147.0186,9
+34-47,7/14/2021,320,Nome Creek,Sec 7,65.3386,-146.9590,9.4
+34-48,7/14/2021,307,Nome Creek,Sec 7,65.3405,-146.9864,9
+34-49,7/23/2021,381,Quartz Creek,Champion Creek,65.4782,-146.5787,-
+34-50,7/24/2021,280,Nome Creek,Above Put-In Point,65.3674,-147.0791,10
+34-51,7/8/2021,290,Beaver Creek,Beaver Ck Float,65.3812,-147.1019,11
+34-52,7/8/2021,331,Beaver Creek,Beaver Ck Float,65.3833,-147.1038,11
+34-53,7/8/2021,293,Beaver Creek,Beaver Ck Float,65.3833,-147.1038,11
+34-54,7/8/2021,330,Beaver Creek,Beaver Ck Float,65.3831,-147.1100,11
+34-55,7/8/2021,297,Beaver Creek,Beaver Ck Float,65.3831,-147.1100,11
+34-56,7/8/2021,300,Beaver Creek,Beaver Ck Float,65.3831,-147.1100,11
+34-57,7/9/2021,288,Beaver Creek,Beaver Ck Float,65.3956,-147.1921,9.5
+34-58,7/9/2021,297,Beaver Creek,Beaver Ck Float,65.3956,-147.1921,9.5
+34-59,7/9/2021,350,Beaver Creek,Beaver Ck Float,65.3947,-147.2998,12.1
+34-60,7/9/2021,346,Beaver Creek,Beaver Ck Float,65.3947,-147.2998,12.1
+34-61,7/9/2021,335,Beaver Creek,Beaver Ck Float,65.3844,-147.3306,12
+34-62,7/9/2021,304,Beaver Creek,Beaver Ck Float,65.3844,-147.3306,12
+34-63,7/9/2021,335,Beaver Creek,Beaver Ck Float,65.3844,-147.3306,12
+34-64,7/9/2021,320,Beaver Creek,Beaver Ck Float,65.3843,-147.4042,12.1
+34-65,7/9/2021,307,Beaver Creek,Beaver Ck Float,65.3843,-147.4042,12.1
+34-66,7/10/2021,298,Beaver Creek,Beaver Ck Float,65.3806,-147.4454,10
+34-67,7/10/2021,353,Beaver Creek,Beaver Ck Float,65.3806,-147.4454,10
+34-68,7/10/2021,301,Beaver Creek,Beaver Ck Float,65.3806,-147.4454,10
+34-69,7/10/2021,298,Beaver Creek,Beaver Ck Float,65.3771,-147.4479,10.6
+34-70,7/10/2021,305,Beaver Creek,Beaver Ck Float,65.3771,-147.4479,10.6
+34-71,7/10/2021,306,Beaver Creek,Beaver Ck Float,65.3820,-147.5104,12
+34-72,7/10/2021,315,Beaver Creek,Beaver Ck Float,65.3760,-147.6347,13.7
+34-73,7/10/2021,298,Beaver Creek,Beaver Ck Float,65.3760,-147.6347,13.7
+34-74,7/11/2021,338,Beaver Creek,Beaver Ck Float,65.3774,-147.7458,11
+34-75,7/11/2021,310,Beaver Creek,Beaver Ck Float,65.3774,-147.7458,11
+34-76,7/11/2021,318,Beaver Creek,Beaver Ck Float,65.3774,-147.7458,11
+34-77,7/11/2021,295,Beaver Creek,Beaver Ck Float,65.3774,-147.7458,11
+34-78,7/11/2021,305,Beaver Creek,Beaver Ck Float,65.3893,-147.7737,11.7
+34-79,7/11/2021,302,Beaver Creek,Beaver Ck Float,65.3893,-147.7737,11.7
+34-80,7/11/2021,293,Beaver Creek,Beaver Ck Float,65.3893,-147.7737,11.7
+34-81,7/11/2021,313,Beaver Creek,Beaver Ck Float,65.4180,-147.8126,13
+34-82,7/11/2021,314,Beaver Creek,Beaver Ck Float,65.4180,-147.8126,13
+34-83,7/11/2021,314,Beaver Creek,Beaver Ck Float,65.4180,-147.8126,13
+34-84,7/11/2021,335,Beaver Creek,Beaver Ck Float,65.4527,-147.7571,13.7
+34-85,7/11/2021,301,Beaver Creek,Beaver Ck Float,65.4527,-147.7571,13.7
+34-86,7/11/2021,300,Beaver Creek,Beaver Ck Float,65.4527,-147.7571,13.7
+34-87,7/12/2021,338,Beaver Creek,Beaver Ck Float,65.4570,-147.7180,11
+34-88,7/12/2021,326,Beaver Creek,Beaver Ck Float,65.4570,-147.7180,11
+34-89,7/12/2021,317,Beaver Creek,Beaver Ck Float,65.4570,-147.7180,11
+34-90,,,Beaver Creek,Beaver Ck Float,,,
+34-91,7/12/2021,340,Beaver Creek,Beaver Ck Float,65.4787,-147.6561,12
+34-92,7/12/2021,333,Beaver Creek,Beaver Ck Float,65.4787,-147.6561,12
+34-93,7/12/2021,322,Beaver Creek,Beaver Ck Float,65.4787,-147.6561,12
+34-94,7/12/2021,300,Beaver Creek,Beaver Ck Float,65.4787,-147.6561,12
+34-95,7/12/2021,340,Beaver Creek,Beaver Ck Float,65.5014,-147.6550,12.7
+34-96,7/12/2021,314,Beaver Creek,Beaver Ck Float,65.5014,-147.6550,12.7
+34-97,7/12/2021,300,Beaver Creek,Beaver Ck Float,65.5254,-147.6551,14.2
+34-98,7/12/2021,296,Beaver Creek,Beaver Ck Float,65.5254,-147.6551,14.2
+34-99,7/12/2021,324,Beaver Creek,Beaver Ck Float,65.5421,-147.6672,14.7
+34-100,7/12/2021,309,Beaver Creek,Beaver Ck Float,65.5421,-147.6672,14.7
+34-101,7/13/2021,347,Beaver Creek,Beaver Ck Float,65.5624,-147.6849,12
+34-102,7/13/2021,331,Beaver Creek,Beaver Ck Float,65.5624,-147.6849,12
+34-103,7/13/2021,301,Beaver Creek,Beaver Ck Float,65.5624,-147.6849,12
+34-104,7/13/2021,313,Beaver Creek,Beaver Ck Float,65.5624,-147.6849,12
+34-105,7/13/2021,357,Beaver Creek,Beaver Ck Float,65.5841,-147.6661,12.7
+34-106,7/13/2021,329,Beaver Creek,Beaver Ck Float,65.5841,-147.6661,12.7
+34-107,7/13/2021,316,Beaver Creek,Beaver Ck Float,65.5841,-147.6661,12.7
+34-108,7/13/2021,334,Beaver Creek,Beaver Ck Float,65.6113,-147.6503,14
+34-109,7/13/2021,295,Beaver Creek,Beaver Ck Float,65.6113,-147.6503,14
+34-110,7/13/2021,295,Beaver Creek,Beaver Ck Float,65.6113,-147.6503,14
+34-111,7/14/2021,297,Beaver Creek,Beaver Ck Float,65.6504,-147.5846,12.7
+34-112,7/14/2021,285,Beaver Creek,Beaver Ck Float,65.6504,-147.5846,12.7
+34-113,7/14/2021,305,Beaver Creek,Beaver Ck Float,65.6504,-147.5846,12.7
+34-114,7/14/2021,319,Beaver Creek,Beaver Ck Float,65.6677,-147.5472,12.7
+34-115,7/14/2021,310,Beaver Creek,Beaver Ck Float,65.6677,-147.5472,12.7
+34-116,7/14/2021,310,Beaver Creek,Beaver Ck Float,65.6677,-147.5472,12.7
+34-117,7/14/2021,310,Beaver Creek,Beaver Ck Float,65.6677,-147.5472,12.7
+34-118,7/14/2021,341,Beaver Creek,Beaver Ck Float,65.6941,-147.4814,12.9
+34-119,7/14/2021,310,Beaver Creek,Beaver Ck Float,65.6941,-147.4814,12.9
+34-120,7/14/2021,313,Beaver Creek,Beaver Ck Float,65.6941,-147.4814,12.9
+34-121,7/14/2021,294,Beaver Creek,Beaver Ck Float,65.6941,-147.4814,12.9
+34-122,7/14/2021,323,Beaver Creek,Beaver Ck Float,65.7241,-147.4338,14
+34-123,7/14/2021,311,Beaver Creek,Beaver Ck Float,65.7241,-147.4338,14
+34-124,7/14/2021,308,Beaver Creek,Beaver Ck Float,65.7280,-147.3431,15
+34-125,7/14/2021,316,Beaver Creek,Beaver Ck Float,65.7280,-147.3431,15
+34-126,7/15/2021,308,Beaver Creek,Beaver Ck Float,65.7575,-147.1752,13.7
+34-127,7/15/2021,286,Beaver Creek,Beaver Ck Float,65.7575,-147.1752,13.7
+34-128,7/15/2021,290,Beaver Creek,Beaver Ck Float,65.7575,-147.1752,13.7
+34-129,7/15/2021,312,Beaver Creek,Beaver Ck Float,65.7581,-147.1157,13.2
+34-130,7/15/2021,308,Beaver Creek,Beaver Ck Float,65.7581,-147.1157,13.2
+34-131,7/15/2021,309,Beaver Creek,Beaver Ck Float,65.7581,-147.1157,13.2
+34-132,7/15/2021,370,Beaver Creek,Beaver Ck Float,65.7397,-147.0796,15.4
+34-133,7/15/2021,308,Beaver Creek,Beaver Ck Float,65.7397,-147.0796,15.4
+34-134,7/15/2021,309,Beaver Creek,Beaver Ck Float,65.7397,-147.0796,15.4
+34-135,7/15/2021,312,Beaver Creek,Beaver Ck Float,65.7276,-146.9742,17
+34-136,7/15/2021,283,Beaver Creek,Beaver Ck Float,65.7276,-146.9742,17
+34-137,7/15/2021,281,Beaver Creek,Beaver Ck Float,65.7345,-146.9490,17.6
+34-138,7/15/2021,311,Beaver Creek,Beaver Ck Float,65.7324,-146.9258,18
+34-139,7/15/2021,295,Beaver Creek,Beaver Ck Float,65.7324,-146.9258,18
+34-140,7/15/2021,310,Beaver Creek,Beaver Ck Float,65.7370,-146.8903,16
+34-141,7/21/2021,340,Quartz Ck Trail,At Campsite,65.5347,-146.5772,11
+34-142,7/21/2021,337,Quartz Ck Trail,At Campsite,65.5347,-146.5772,11
+34-143,7/21/2021,320,Quartz Ck Trail,At Campsite,65.5347,-146.5772,11
+34-144,7/21/2021,305,Quartz Ck Trail,At Campsite,65.5347,-146.5772,11
+34-145,7/21/2021,285,Quartz Ck Trail,At Campsite,65.5347,-146.5772,11
+34-146,7/21/2021,286,Quartz Ck Trail,At Campsite,65.5347,-146.5772,11
+34-147,7/22/2021,398,Quartz Ck Trail,Quartz Creek,65.5333,-146.5882,8.1
+34-148,7/22/2021,286,Quartz Ck Trail,Quartz Creek,65.5333,-146.5882,8.1
+34-149,7/22/2021,313,Quartz Ck Trail,Quartz Creek,65.5333,-146.5882,8.1
+34-150,7/22/2021,274,Quartz Ck Trail,Quartz Creek,65.5333,-146.5882,8.1
+34-151,7/22/2021,410,Quartz Ck Trail,Quartz Creek,65.5333,-146.6049,-
+34-152,7/23/2021,351,Quartz Ck Trail,Quartz Creek,65.5335,-146.6059,11.6
+34-153,7/23/2021,340,Quartz Ck Trail,Quartz Creek,65.5335,-146.6059,11.6
+34-154,7/23/2021,307,Quartz Ck Trail,Quartz Creek,65.5335,-146.6059,11.6
+34-155,7/23/2021,270,Quartz Ck Trail,Quartz Creek,65.5335,-146.6059,11.6
+34-156,7/23/2021,297,Quartz Ck Trail,Champion Creek,65.4782,-146.5787,-
+34-157,7/23/2021,271,Quartz Ck Trail,Champion Creek,65.4763,-146.5825,11.3
+34-158,7/23/2021,310,Quartz Ck Trail,Champion Creek,65.4763,-146.5825,11.3
+34-159,7/23/2021,278,Quartz Ck Trail,Little Champion Creek,65.4023,-146.6794,9.6
+34-160,7/23/2021,375,Quartz Ck Trail,Little Champion Creek,65.4023,-146.6794,9.6
