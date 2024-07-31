@@ -1,5 +1,26 @@
+# Script 1: Beaver Creek Data
+# Matt Tyers, July 2024
+
+# This script is specific to loading packages, loading data, and doing data manipulation.
+# This script will be source()d at the beginning of subsequent scripts for clarity.
+
+# The important objects loaded into the R workspace are:
+#   beaver_cr_op: the rivernetwork object for riverdist computation
+#   all_locs: a long-format dataframe with all telemetry observations
+#   seasonal_locs: a wide-format dataframe with telemetry observations for each season
+#   all_locs_widelist: a list of wide-format tables for all telem observations,
+#     where each row is a fish and each column is a survey
+#   seasonal_locs_widelist: a list of wide-format tables for each season,
+#     where each row is a fish and each column is a season
+#   tagging_data: data recorded at tagging.  Probably will only use $Length_mm.
+
+
+# Loading Packages
+
 library(riverdist)   # for spatial analysis
 library(tidyverse)   # for data manipulation
+
+
 
 # loading data: river network
 
@@ -66,21 +87,107 @@ all_locs$Survey[all_locs$Date == "2023-06-26"] <- 14
 
 
 # standardizing (ordering) tag numbers and removing fish 90
-substr(all_locs$Fish, 4, 99) %>%
-  unique %>% sort
 
-gsub("[^0-9.-]", "", substr(all_locs$Fish, 4, 99)) %>% 
-  as.numeric %>%
-  unique %>%
-  sort
-
-# this means it worked!!
+# this means it will work!!
 all(rowSums(table(all_locs$Fish, 
               as.numeric(gsub("[^0-9.-]", "", substr(all_locs$Fish, 4, 99)))) != 0)==1)
 
-## THIS IS NOT FINISHED YET, I THINK I NEED THE SECOND THING ABOVE
+all_locs$Fish <- as.numeric(gsub("[^0-9.-]", "", substr(all_locs$Fish, 4, 99))) # %>% 
+  # as.numeric %>%
+  # unique %>%
+  # sort
 
+all_locs <- subset(all_locs, Fish != 90)
+
+# need to fill in OP river sections for each observation
+# probably make a table and then left_join
+sectiontable <- data.frame(seg=1:37, section=NA)
+sectiontable$section[sectiontable$seg %in% c(23, 22, 36, 33, 21, 35, 20, 33)] <- "Lower"
+sectiontable$section[sectiontable$seg %in% c(34, 19, 26, 18, 27, 17)] <- "Middle"
+sectiontable$section[sectiontable$seg %in% c(29, 37, 28, 16, 32, 15, 31, 14, 13, 
+                                             24, 8, 25, 7, 12, 2, 11, 10, 30, 1, 
+                                             3, 4, 6, 7, 5, 9)] <- "Upper"
+all_locs <- left_join(all_locs, sectiontable)
+#### It might be advangageous to split Upper - keep an eye on this!
+
+table(all_locs$section)
+with(all_locs, table(Survey, section)) %>% mosaicplot
 
 
 # loading data: seasonal aggregations
-# compiling a single dataframe all_locs
+# compiling a single dataframe seasonal_locs
+seasonal_locs <- read.csv("R_data/seasonal_consolidation.csv")
+seasonal_locs_albers <- sf::sf_project(pts=seasonal_locs[,4:3], to=AKalbers)
+plot(beaver_cr_op)
+points(seasonal_locs_albers, pch=16, col=2)
+
+seasonal_locs_segvert <- xy2segvert(x = seasonal_locs_albers[,1],
+                               y = seasonal_locs_albers[,2],
+                               rivers = beaver_cr_op)
+riverpoints(seg = seasonal_locs_segvert$seg,
+            vert = seasonal_locs_segvert$vert,
+            rivers = beaver_cr_op,
+            pch = 15, col = 4)
+
+seasonal_locs$x <- seasonal_locs_albers[,1]
+seasonal_locs$y <- seasonal_locs_albers[,2]
+seasonal_locs$seg <- seasonal_locs_segvert$seg
+seasonal_locs$vert <- seasonal_locs_segvert$vert
+
+# standardizing (ordering) tag numbers and removing fish 90
+
+# this means it will work!!
+all(rowSums(table(seasonal_locs$Fish, 
+                  as.numeric(gsub("[^0-9.-]", "", substr(seasonal_locs$Fish, 4, 99)))) != 0)==1)
+
+seasonal_locs$Fish <- as.numeric(gsub("[^0-9.-]", "", substr(seasonal_locs$Fish, 4, 99))) # %>% 
+# as.numeric %>%
+# unique %>%
+# sort
+
+seasonal_locs <- subset(seasonal_locs, Fish != 90)
+
+seasonal_locs <- left_join(seasonal_locs, sectiontable)
+with(seasonal_locs, table(Season, section))%>% mosaicplot
+
+seasonal_locs$upstream_km <- with(seasonal_locs, mouthdist(seg=seg, vert=vert, rivers=beaver_cr_op))/1000
+all_locs$upstream_km <- with(all_locs, mouthdist(seg=seg, vert=vert, rivers=beaver_cr_op))/1000
+
+
+## then need to make lists of wide-format for all_locs and seasonal_locs
+
+all_locs_widelist <- list()
+all_locs_widelist$Date <- pivot_wider(all_locs, id_cols = Fish, names_from = Survey, 
+                                      values_from = Date, names_sort = TRUE)
+all_locs_widelist$x <- pivot_wider(all_locs, id_cols = Fish, names_from = Survey, 
+                                   values_from = x, names_sort = TRUE)
+all_locs_widelist$y <- pivot_wider(all_locs, id_cols = Fish, names_from = Survey, 
+                                   values_from = y, names_sort = TRUE)
+all_locs_widelist$seg <- pivot_wider(all_locs, id_cols = Fish, names_from = Survey, 
+                                     values_from = seg, names_sort = TRUE)
+all_locs_widelist$vert <- pivot_wider(all_locs, id_cols = Fish, names_from = Survey, 
+                                      values_from = vert, names_sort = TRUE)
+all_locs_widelist$section <- pivot_wider(all_locs, id_cols = Fish, names_from = Survey, 
+                                         values_from = section, names_sort = TRUE)
+all_locs_widelist$upstream_km <- pivot_wider(all_locs, id_cols = Fish, names_from = Survey, 
+                                             values_from = upstream_km, names_sort = TRUE)
+
+seasonal_locs_widelist <- list()
+seasonal_locs_widelist$x <- pivot_wider(seasonal_locs, id_cols = Fish, names_from = Season, 
+                                   values_from = x, names_sort = TRUE)
+seasonal_locs_widelist$y <- pivot_wider(seasonal_locs, id_cols = Fish, names_from = Season, 
+                                   values_from = y, names_sort = TRUE)
+seasonal_locs_widelist$seg <- pivot_wider(seasonal_locs, id_cols = Fish, names_from = Season, 
+                                     values_from = seg, names_sort = TRUE)
+seasonal_locs_widelist$vert <- pivot_wider(seasonal_locs, id_cols = Fish, names_from = Season, 
+                                      values_from = vert, names_sort = TRUE)
+seasonal_locs_widelist$section <- pivot_wider(seasonal_locs, id_cols = Fish, names_from = Season, 
+                                         values_from = section, names_sort = TRUE)
+seasonal_locs_widelist$upstream_km <- pivot_wider(seasonal_locs, id_cols = Fish, names_from = Season, 
+                                             values_from = upstream_km, names_sort = TRUE)
+
+
+# making sure the tagging_data dataframe is formatted equivalently
+tagging_data$Fish <- as.numeric(gsub("[^0-9.-]", "", substr(tagging_data$Frequency, 4, 99)))
+tagging_data <- tagging_data[order(tagging_data$Fish),]
+tagging_data <- tagging_data[tagging_data$Fish != 90,]
