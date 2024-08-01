@@ -19,6 +19,7 @@
 
 library(riverdist)   # for spatial analysis
 library(tidyverse)   # for data manipulation
+library(dsftools)    # some additional analysis tools
 
 
 
@@ -101,17 +102,29 @@ all_locs <- subset(all_locs, Fish != 90)
 
 # need to fill in OP river sections for each observation
 # probably make a table and then left_join
-sectiontable <- data.frame(seg=1:37, section=NA)
-sectiontable$section[sectiontable$seg %in% c(23, 22, 36, 33, 21, 35, 20, 33)] <- "Lower"
-sectiontable$section[sectiontable$seg %in% c(34, 19, 26, 18, 27, 17)] <- "Middle"
-sectiontable$section[sectiontable$seg %in% c(29, 37, 28, 16, 32, 15, 31, 14, 13, 
-                                             24, 8, 25, 7, 12, 2, 11, 10, 30, 1, 
-                                             3, 4, 6, 7, 5, 9)] <- "Upper"
+sectiontable <- data.frame(seg=1:37, section=NA, mainstem=NA)
+sectiontable$section[sectiontable$seg %in% c(23, 22, 36, 33, 21, 35, 20, 33)] <- "1_Lower"
+sectiontable$section[sectiontable$seg %in% c(34, 19, 26, 18, 27, 17)] <- "2_Middle"
+sectiontable$section[sectiontable$seg %in% c(29, 37, 28, 16, 32, 15, 31, 14, 13, 24)]  <- "3_Upper"
+sectiontable$section[sectiontable$seg %in% c(8, 25, 7, 12, 2, 11, 10, 30, 1, 
+                                             3, 4, 6, 7, 5, 9)] <- "4_Headwaters"
+sectiontable$mainstem <- ifelse(sectiontable$section == "4_Headwaters", "3_Headwaters",
+                                ifelse(sectiontable$seg %in% 13:23, "1_Mainstem",
+                                       "2_Trib"))
 all_locs <- left_join(all_locs, sectiontable)
-#### It might be advangageous to split Upper - keep an eye on this!
 
 table(all_locs$section)
 with(all_locs, table(Survey, section)) %>% mosaicplot
+
+table(all_locs$mainstem)
+with(all_locs, table(Survey, mainstem)) %>% mosaicplot
+
+# add median tagging date so I can use dates later
+all_locs$SurveyDate <- as.Date(ifelse(all_locs$Survey == 0,
+                              median(all_locs$Date[all_locs$Survey == 0]),
+                              all_locs$Date))
+
+
 
 
 # loading data: seasonal aggregations
@@ -149,6 +162,7 @@ seasonal_locs <- subset(seasonal_locs, Fish != 90)
 
 seasonal_locs <- left_join(seasonal_locs, sectiontable)
 with(seasonal_locs, table(Season, section))%>% mosaicplot
+with(seasonal_locs, table(Season, mainstem))%>% mosaicplot
 
 seasonal_locs$upstream_km <- with(seasonal_locs, mouthdist(seg=seg, vert=vert, rivers=beaver_cr_op))/1000
 all_locs$upstream_km <- with(all_locs, mouthdist(seg=seg, vert=vert, rivers=beaver_cr_op))/1000
@@ -169,6 +183,8 @@ all_locs_widelist$vert <- pivot_wider(all_locs, id_cols = Fish, names_from = Sur
                                       values_from = vert, names_sort = TRUE)
 all_locs_widelist$section <- pivot_wider(all_locs, id_cols = Fish, names_from = Survey, 
                                          values_from = section, names_sort = TRUE)
+all_locs_widelist$mainstem <- pivot_wider(all_locs, id_cols = Fish, names_from = Survey, 
+                                         values_from = mainstem, names_sort = TRUE)
 all_locs_widelist$upstream_km <- pivot_wider(all_locs, id_cols = Fish, names_from = Survey, 
                                              values_from = upstream_km, names_sort = TRUE)
 
@@ -182,7 +198,9 @@ seasonal_locs_widelist$seg <- pivot_wider(seasonal_locs, id_cols = Fish, names_f
 seasonal_locs_widelist$vert <- pivot_wider(seasonal_locs, id_cols = Fish, names_from = Season, 
                                       values_from = vert, names_sort = TRUE)
 seasonal_locs_widelist$section <- pivot_wider(seasonal_locs, id_cols = Fish, names_from = Season, 
-                                         values_from = section, names_sort = TRUE)
+                                              values_from = section, names_sort = TRUE)
+seasonal_locs_widelist$mainstem <- pivot_wider(seasonal_locs, id_cols = Fish, names_from = Season, 
+                                              values_from = mainstem, names_sort = TRUE)
 seasonal_locs_widelist$upstream_km <- pivot_wider(seasonal_locs, id_cols = Fish, names_from = Season, 
                                              values_from = upstream_km, names_sort = TRUE)
 
