@@ -204,6 +204,17 @@ seasonal_locs_widelist$mainstem <- pivot_wider(seasonal_locs, id_cols = Fish, na
 seasonal_locs_widelist$upstream_km <- pivot_wider(seasonal_locs, id_cols = Fish, names_from = Season, 
                                              values_from = upstream_km, names_sort = TRUE) %>% arrange(Fish)
 
+# making the $Fish column a row name rather than a column
+for(i_list in 1:length(all_locs_widelist)) {
+  all_locs_widelist[[i_list]] <- as.data.frame(all_locs_widelist[[i_list]])
+  rownames(all_locs_widelist[[i_list]]) <- as.vector(all_locs_widelist[[i_list]][,1])
+  all_locs_widelist[[i_list]] <- all_locs_widelist[[i_list]][,-1]
+}
+for(i_list in 1:length(seasonal_locs_widelist)) {
+  seasonal_locs_widelist[[i_list]] <- as.data.frame(seasonal_locs_widelist[[i_list]])
+  rownames(seasonal_locs_widelist[[i_list]]) <- as.vector(seasonal_locs_widelist[[i_list]][,1])
+  seasonal_locs_widelist[[i_list]] <- seasonal_locs_widelist[[i_list]][,-1]
+}
 
 # making sure the tagging_data dataframe is formatted equivalently
 tagging_data$Fish <- as.numeric(gsub("[^0-9.-]", "", substr(tagging_data$Frequency, 4, 99)))

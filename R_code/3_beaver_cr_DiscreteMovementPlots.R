@@ -1,8 +1,22 @@
-source("R_code/1_beaver_cr_data.R")
+# Script 3: Discrete Movement
+# Matt Tyers, August 2024
+
+# The purpose of this script is to illustrate and summarize movement between
+# river sections (lower, middle, upper, headwaters) between seasons, as well
+# as movement between river designations (mainstem, tributary, headwaters).
+
+# This script is motivated by the hope that aggregate patterns in seasonal 
+# movement will be evident when simplifying the study area to discrete regions.
+
+# section and designation were defined in Script 1, and can be modified there if desired.
+
+
+
+source("R_code/1_beaver_cr_data.R")  # loading data
 
 library(ggsankey)   # for Sankey plots
 
-write_output <- TRUE  # whether to write figures & tables to external file
+write_output <- FALSE  # whether to write figures & tables to external file
 
 
 
@@ -67,8 +81,8 @@ if(write_output) {
 
 fulllevels <- rev(sectionlabels)
 
-Sankey_bysection <- seasonal_locs_widelist$section[,-1] %>%
-  make_long(names(seasonal_locs_widelist$section[,-1])) %>%
+Sankey_bysection <- seasonal_locs_widelist$section %>%
+  make_long(names(seasonal_locs_widelist$section)) %>%
   mutate(node = factor(node, levels=rev(sort(unique(node))))) %>%
   mutate(next_node = factor(next_node, levels=rev(sort(unique(next_node))))) %>%
   ggplot(aes(x = x,
@@ -93,8 +107,8 @@ if(write_output) ggsave(Sankey_bysection, filename="R_output/Section_Sankey.png"
 
 # ------------------ Sankey Plot: Designation -------------------- #
 
-Sankey_bydesignation <- seasonal_locs_widelist$mainstem[,-1] %>%
-  make_long(names(seasonal_locs_widelist$mainstem[,-1])) %>%
+Sankey_bydesignation <- seasonal_locs_widelist$mainstem %>%
+  make_long(names(seasonal_locs_widelist$mainstem)) %>%
   mutate(node = factor(node, levels=rev(sort(unique(node))))) %>%
   mutate(next_node = factor(next_node, levels=rev(sort(unique(next_node))))) %>%
   ggplot(aes(x = x,
@@ -127,7 +141,7 @@ if(write_output) {
 
 par(mfrow=c(1,1))
 
-sectionmatraw <- as.data.frame(seasonal_locs_widelist$section[,-1])
+sectionmatraw <- as.data.frame(seasonal_locs_widelist$section)
 sectionmat <- matrix(nrow=nrow(sectionmatraw),
                      ncol=ncol(sectionmatraw))
 for(j in 1:ncol(sectionmat)) {
@@ -167,7 +181,7 @@ if(write_output) {
 
 par(mfrow=c(1,1))
 
-mainstemmatraw <- as.data.frame(seasonal_locs_widelist$mainstem[,-1])
+mainstemmatraw <- as.data.frame(seasonal_locs_widelist$mainstem)
 mainstemmat <- matrix(nrow=nrow(mainstemmatraw),
                      ncol=ncol(mainstemmatraw))
 fulllevels <- rev(c("Mainstem","Tributaries","Headwaters"))
@@ -306,3 +320,4 @@ survey_des
 if(write_output){
   write.csv(survey_des, file="R_output/Designation_bySurvey.csv")
 }
+

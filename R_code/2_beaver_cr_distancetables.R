@@ -1,4 +1,12 @@
-source("R_code/1_beaver_cr_data.R")
+# Script 3: Discrete Movement
+# Matt Tyers, August 2024
+
+# The purpose of this script is to compute and summarize travel distances 
+# between sequential surveys, and between sequential seasons.
+
+
+
+source("R_code/1_beaver_cr_data.R")  # loading data
 
 
 write_output <- FALSE  # whether to write figures & tables to external file
@@ -113,8 +121,8 @@ mosaicplot(upstreamseq_all_summary[c("n_up","n_down")])
 mosaicplot(upstreamseq_seasonal_summary[c("n_up","n_down")])
 
 # refine these better, maybe make them their own file
-plotseq(as.data.frame(all_locs_widelist$upstream_km[,-1]), type="dotline")
-plotseq(as.data.frame(seasonal_locs_widelist$upstream_km[,-1]), type="dotline")
+plotseq(as.data.frame(all_locs_widelist$upstream_km), type="dotline")
+plotseq(as.data.frame(seasonal_locs_widelist$upstream_km), type="dotline")
 
 
 
