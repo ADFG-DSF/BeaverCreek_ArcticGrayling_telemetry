@@ -190,19 +190,19 @@ all_locs_widelist$upstream_km <- pivot_wider(all_locs, id_cols = Fish, names_fro
 
 seasonal_locs_widelist <- list()
 seasonal_locs_widelist$x <- pivot_wider(seasonal_locs, id_cols = Fish, names_from = Season, 
-                                   values_from = x, names_sort = TRUE)
+                                   values_from = x, names_sort = TRUE) %>% arrange(Fish)
 seasonal_locs_widelist$y <- pivot_wider(seasonal_locs, id_cols = Fish, names_from = Season, 
-                                   values_from = y, names_sort = TRUE)
+                                   values_from = y, names_sort = TRUE) %>% arrange(Fish)
 seasonal_locs_widelist$seg <- pivot_wider(seasonal_locs, id_cols = Fish, names_from = Season, 
-                                     values_from = seg, names_sort = TRUE)
+                                     values_from = seg, names_sort = TRUE) %>% arrange(Fish)
 seasonal_locs_widelist$vert <- pivot_wider(seasonal_locs, id_cols = Fish, names_from = Season, 
-                                      values_from = vert, names_sort = TRUE)
+                                      values_from = vert, names_sort = TRUE) %>% arrange(Fish)
 seasonal_locs_widelist$section <- pivot_wider(seasonal_locs, id_cols = Fish, names_from = Season, 
-                                              values_from = section, names_sort = TRUE)
+                                              values_from = section, names_sort = TRUE) %>% arrange(Fish)
 seasonal_locs_widelist$mainstem <- pivot_wider(seasonal_locs, id_cols = Fish, names_from = Season, 
-                                              values_from = mainstem, names_sort = TRUE)
+                                              values_from = mainstem, names_sort = TRUE) %>% arrange(Fish)
 seasonal_locs_widelist$upstream_km <- pivot_wider(seasonal_locs, id_cols = Fish, names_from = Season, 
-                                             values_from = upstream_km, names_sort = TRUE)
+                                             values_from = upstream_km, names_sort = TRUE) %>% arrange(Fish)
 
 
 # making sure the tagging_data dataframe is formatted equivalently
