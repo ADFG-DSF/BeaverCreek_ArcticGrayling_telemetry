@@ -122,9 +122,7 @@ by_indiv$summer_designation <- NA
 collapser <- function(x) {
   ifelse(length(x) > 1, 
          paste(x, collapse="/"),
-         ifelse(length(x) == 0,
-                NA,
-                x))
+         ifelse(length(x) == 0, NA, x))
 }
 for(i in 1:nrow(seasonal_locs_widelist$seg)) {
   sec <- substr(seasonal_locs_widelist$section[i,], 3,99)
@@ -140,7 +138,7 @@ for(i in 1:nrow(seasonal_locs_widelist$seg)) {
     collapser(sort(unique(sec[c(2,5)][!is.na(sec[c(2,5)])])))
   
   by_indiv$spring_designation[by_indiv$Fish == rownames(seasonal_locs_widelist$seg)[i]] <-
-    springdes <- collapser(sort(unique(des[c(2,5)][!is.na(des[c(2,5)])])))
+    collapser(sort(unique(des[c(2,5)][!is.na(des[c(2,5)])])))
   
   by_indiv$summer_section[by_indiv$Fish == rownames(seasonal_locs_widelist$seg)[i]] <-
     collapser(sort(unique(sec[c(3,6)][!is.na(sec[c(3,6)])])))
