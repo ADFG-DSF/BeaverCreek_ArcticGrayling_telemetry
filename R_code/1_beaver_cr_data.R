@@ -168,6 +168,29 @@ seasonal_locs$upstream_km <- with(seasonal_locs, mouthdist(seg=seg, vert=vert, r
 all_locs$upstream_km <- with(all_locs, mouthdist(seg=seg, vert=vert, rivers=beaver_cr_op))/1000
 
 
+
+## adding snapped x & y coordinates to both datasets
+
+segvert2xy <- function(seg, vert, rivers) {
+  if(length(seg) != length(vert)) stop("Unequal vectors")
+  xy <- matrix(nrow=length(seg), ncol=2)
+  for(i in 1:length(seg)) {
+    xy[i, ] <- rivers$lines[[seg[i]]][vert[i],]
+  }
+  return(xy)
+}
+
+all_xy <- segvert2xy(seg=all_locs$seg, vert=all_locs$vert,
+                          rivers=beaver_cr_op)
+all_locs$snap_x <- all_xy[,1]
+all_locs$snap_y <- all_xy[,2]
+seasonal_xy <- segvert2xy(seg=seasonal_locs$seg, vert=seasonal_locs$vert,
+                          rivers=beaver_cr_op)
+seasonal_locs$snap_x <- seasonal_xy[,1]
+seasonal_locs$snap_y <- seasonal_xy[,2]
+
+
+
 ## then need to make lists of wide-format for all_locs and seasonal_locs
 
 all_locs_widelist <- list()
@@ -177,6 +200,10 @@ all_locs_widelist$x <- pivot_wider(all_locs, id_cols = Fish, names_from = Survey
                                    values_from = x, names_sort = TRUE)
 all_locs_widelist$y <- pivot_wider(all_locs, id_cols = Fish, names_from = Survey, 
                                    values_from = y, names_sort = TRUE)
+all_locs_widelist$snap_x <- pivot_wider(all_locs, id_cols = Fish, names_from = Survey, 
+                                   values_from = snap_x, names_sort = TRUE)
+all_locs_widelist$snap_y <- pivot_wider(all_locs, id_cols = Fish, names_from = Survey, 
+                                   values_from = snap_y, names_sort = TRUE)
 all_locs_widelist$seg <- pivot_wider(all_locs, id_cols = Fish, names_from = Survey, 
                                      values_from = seg, names_sort = TRUE)
 all_locs_widelist$vert <- pivot_wider(all_locs, id_cols = Fish, names_from = Survey, 
@@ -190,9 +217,13 @@ all_locs_widelist$upstream_km <- pivot_wider(all_locs, id_cols = Fish, names_fro
 
 seasonal_locs_widelist <- list()
 seasonal_locs_widelist$x <- pivot_wider(seasonal_locs, id_cols = Fish, names_from = Season, 
-                                   values_from = x, names_sort = TRUE) %>% arrange(Fish)
+                                        values_from = x, names_sort = TRUE) %>% arrange(Fish)
 seasonal_locs_widelist$y <- pivot_wider(seasonal_locs, id_cols = Fish, names_from = Season, 
-                                   values_from = y, names_sort = TRUE) %>% arrange(Fish)
+                                        values_from = y, names_sort = TRUE) %>% arrange(Fish)
+seasonal_locs_widelist$snap_x <- pivot_wider(seasonal_locs, id_cols = Fish, names_from = Season, 
+                                        values_from = snap_x, names_sort = TRUE) %>% arrange(Fish)
+seasonal_locs_widelist$snap_y <- pivot_wider(seasonal_locs, id_cols = Fish, names_from = Season, 
+                                        values_from = snap_y, names_sort = TRUE) %>% arrange(Fish)
 seasonal_locs_widelist$seg <- pivot_wider(seasonal_locs, id_cols = Fish, names_from = Season, 
                                      values_from = seg, names_sort = TRUE) %>% arrange(Fish)
 seasonal_locs_widelist$vert <- pivot_wider(seasonal_locs, id_cols = Fish, names_from = Season, 

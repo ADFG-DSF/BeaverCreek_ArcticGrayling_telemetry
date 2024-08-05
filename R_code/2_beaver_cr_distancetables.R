@@ -126,19 +126,13 @@ plotseq(as.data.frame(seasonal_locs_widelist$upstream_km), type="dotline")
 
 
 
-# calculate homeranges by individual
-# plot the big mover(s)
+# plot the big mover(s) 
 
 # plot upstream position
 
 # kernel density plots
 # kernel density change??
 
-
-# calculate cumulative distance by individual
-
-# by-individual medians/modes: section, upstream_km
-
-# cumulative dist, homerange ~ sectionmode + upstream_mn + length (ish)
+# red/blue linky plots
 
 # dropouts???  mortality?? -> look into this before asking about it
