@@ -24,6 +24,8 @@ All R code for analyses. Further information is provided within each file.
 
 -   **6_beaver_cr_kerneldensity.R**: Produces kernel density plots by season, as well as kernel density anomaly (difference between season and average.) Also makes a visualization that shows movement between sequential seasons as colored arrows depending on net direction of movement.
 
+-   **7_beaver_cr_UpstreamPosition.R**: At present, this just produces a plot visualizing the location of fish in each flight, as expressed by Upstream Position, defined by the distance from the Yukon River confluence.  This may be developed further to visualize migration profiles for varying values of by-individual variables, but this has not worked yet.
+
 ### R_data
 
 Flat Excel files (.csv) copied from data files provided by the project biologist:
@@ -97,6 +99,7 @@ And Plots.
     -   In many cases, X-Y scatterplots are presented that do not have a strong associated p-value, but the point distributions do show interesting stories regardless.  For example, the lengths of fish are relatively constant in the lower reaches, but exhibit a much larger range in the upper reaches.
     -   In many cases, numeric variables are displayed on the log-scale, which must be kept in mind in interpretation.  In these cases, statistical tests (the pvals in the titles) were also conducted on the log-scale.
     -   A few additional variables were created to show seasonal fidelity as a binned categorical variable.  Variable winterFid is defined by winter-winter distance, and variable winterFid2 is defined by winter-winter distance as a fraction of homerange.  These breakpoints correspond with vertical lines on **FidelityCDF.png** and **FidelityCDF_2.png**.
+    -   In the case of a few fish, the seasonal Section or Designation changed between years (e.g. a fish was recorded as Tributary in one summer and Mainstem the following summer).  In the ByIndividual.csv dataset, this fish would have been recorded as "Tributary/Mainstem".  For the sake of these plots, this entry was simplified to whichever category had the smaller sample size.
 
 -   **FidelityCDF.png** and **FidelityCDF_2.png**: Visualizations of seasonal fidelity, expressed as the empirical cumulative density of seasonal distances (winter-winter, spring-spring, summer-summer), and seasonal distances as a fraction of homerange.  These figures could be considered companion to **Fidelity_tab.csv**.
 
@@ -106,4 +109,6 @@ And Plots.
 
 -   **Section_DiscreteTS.png** and **Section_Sankey.png**: Plots visualizing the movement of fish between river Sections (Lower, Middle, Upper, Headwaters) for each Season. These could be considered companion plots to tables **Section_bySeason.csv** and **Section_bySurvey.csv**.
 
--   **Section_labels**: A simple plot describing how Section and Designation were defined, so these definitions can be refined if desired.
+-   **Section_labels.png**: A simple plot describing how Section and Designation were defined, so these definitions can be refined if desired.
+
+-   **UpstreamPosition.png**: A plot visualizing the location of fish in each flight, as expressed by Upstream Position, defined by the distance from the Yukon River confluence.
