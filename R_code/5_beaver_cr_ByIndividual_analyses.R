@@ -1,6 +1,6 @@
 source("R_code/4_beaver_cr_ByIndividual.R")
 
-write_output <- TRUE  # whether to write figures & tables to external file
+write_output <- FALSE  # whether to write figures & tables to external file
 
 
 summary(by_indiv)
@@ -14,7 +14,7 @@ by_indiv$spring_designation_orig <- by_indiv$spring_designation
 by_indiv$summer_designation_orig <- by_indiv$summer_designation
 
 # simplifying categories, take 1: 
-# defining as the lesser-observed category
+# defining fish with multiple cats as the lesser-observed category
 # don't know if this is appropriate but it's worth a try
 sorter <- function(x) {
   for(icat in sort(unique(x))) {
@@ -179,15 +179,137 @@ if(write_output) {
 # model <=3km, <=15km ~ stuff
 
 breaks <- c(0,3,15,100)
-by_indiv$winterFid <- cut(by_indiv$winterwinter_km, breaks=breaks)
-by_indiv$springFid <- cut(by_indiv$springspring_km, breaks=breaks)
-by_indiv$summerFid <- cut(by_indiv$summersummer_km, breaks=breaks)
+by_indiv$winterFid <- cut(by_indiv$winterwinter_km, breaks=breaks, include.lowest = TRUE)
+by_indiv$springFid <- cut(by_indiv$springspring_km, breaks=breaks, include.lowest = TRUE)
+by_indiv$summerFid <- cut(by_indiv$summersummer_km, breaks=breaks, include.lowest = TRUE)
 
 these <- c(2, 4, 5, 9:18, 25:27)
 for(i in 25:27) {
   par(mfrow=c(4,4))
   for(j in these) {
     if(i!=j) magicplot(x=by_indiv[,i], y=by_indiv[,j],
-              xlab=names(by_indiv)[i], ylab=names(by_indiv)[j])
+                       xlab=names(by_indiv)[i], ylab=names(by_indiv)[j])
   }
 }
+
+breaks <- c(0,0.05,0.2,1)
+by_indiv$winterFid2 <- cut(by_indiv$winterwinter_km/by_indiv$homerange_km, 
+                           breaks=breaks, include.lowest = TRUE)
+by_indiv$springFid2 <- cut(by_indiv$springspring_km/by_indiv$homerange_km, 
+                           breaks=breaks, include.lowest = TRUE)
+by_indiv$summerFid2 <- cut(by_indiv$summersummer_km/by_indiv$homerange_km, 
+                           breaks=breaks, include.lowest = TRUE)
+
+these <- c(2, 4, 5, 9:18, 28:30)
+for(i in 28:30) {
+  par(mfrow=c(4,4))
+  for(j in these) {
+    if(i!=j) magicplot(x=by_indiv[,i], y=by_indiv[,j],
+                       xlab=names(by_indiv)[i], ylab=names(by_indiv)[j])
+  }
+}
+
+
+#### this is getting silly, let's just look at all reasonable relationships one by one
+
+
+magicplot2 <- function(x,y,xlab,ylab,logy) {
+  if(class(x) %in% numerics & class(y) %in% numerics) {
+    if(!logy) {
+    plot(x, y, xlab=xlab, ylab=ylab,
+         main = paste("Reg pval =", round(summary(lm(y~x))$coefficients[2,4], 4)))
+    } else {
+      y <- y+.01
+      plot(x, y, xlab=xlab, ylab=ylab, log="y", las=1,
+           main = paste("Reg pval =", round(summary(lm(log(y)~x))$coefficients[2,4], 4)))
+    }
+  }
+  if(class(x) %in% factors & class(y) %in% numerics) {
+    if(!logy) {
+      boxplot(y ~ x, xlab=xlab, ylab=ylab,
+         main = paste("Anova pval =", round(summary(lm(y~x))$coefficients[2,4], 4)))
+    } else {
+      y <- y+.01
+      boxplot(y ~ x, xlab=xlab, ylab=ylab, log="y", las=1,
+              main = paste("Anova pval =", round(summary(lm(log(y)~x))$coefficients[2,4], 4)))
+    }
+  }
+  if(class(x) %in% numerics & class(y) %in% factors) {
+    boxplot(x ~ y, xlab=ylab, ylab=xlab,
+            main = paste("Anova pval =", round(summary(lm(x~y))$coefficients[2,4], 4)))
+  }
+  if(class(x) %in% factors & class(y) %in% factors) {
+    thetab <- table(x,y)
+    mosaicplot(thetab[,ncol(thetab):1], 
+               xlab=xlab, ylab=ylab, col=grey.colors(ncol(thetab)),
+            main = paste("chi^2 pval =", round(chisq.test(thetab)$p.value, 4)))
+  }
+}
+
+for(i in 9:11) {
+  xx <- by_indiv[,i]
+  xx[xx=="Lower"] <- "Lwr"
+  xx[xx=="Middle"] <- "Mid"
+  xx[xx=="Upper"] <- "Upr"
+  xx[xx=="Headwaters"] <- "Head"
+  by_indiv[,i] <- factor(xx, levels=c("Lwr","Mid","Upr","Head"))
+}
+for(i in 12:14) {
+  xx <- by_indiv[,i]
+  xx[xx=="Mainstem"] <- "Main"
+  xx[xx=="Headwaters"] <- "Head"
+  by_indiv[,i] <- factor(xx, levels=c("Main","Trib","Head"))
+}
+
+xid <- c(2,9:14,15:18)
+yid <- c(4:8,25:30)#,15:18
+logy <- rep(FALSE, 30)
+logy[4:8] <- TRUE
+
+# scipen <- options("scipen")
+# options(scipen=10000)
+plotcount <- 1
+for(j in yid) {
+  if(write_output) {
+    png(filename=paste0("R_output/EDA_",plotcount,".png"),
+        width=10, height=7, units="in", res=100)
+  }
+  par(mfrow=c(3,4))
+  for(i in xid) {
+    magicplot2(x = by_indiv[,i], y = by_indiv[,j], logy=logy[j],
+               xlab= names(by_indiv)[i], ylab=names(by_indiv)[j])
+  }
+  if(write_output) {
+    dev.off()
+  }
+  plotcount <- plotcount + 1
+}
+
+if(write_output) {
+  png(filename=paste0("R_output/EDA_",plotcount,".png"),
+      width=10, height=7, units="in", res=100)
+}
+par(mfrow=c(3,4))
+for(i in xid[-1]) {
+  j <- xid[1]
+  magicplot2(x = by_indiv[,i], y = by_indiv[,j], logy=logy[j],
+             xlab= names(by_indiv)[i], ylab=names(by_indiv)[j])
+}
+if(write_output) {
+  dev.off()
+}
+# options(scipen=scipen)
+
+
+
+# > names(by_indiv)
+# [1] "Fish"                    "Length_mm"               "n_surveys"              
+# [4] "homerange_km"            "cumuldist_km"            "winterwinter_km"        
+# [7] "springspring_km"         "summersummer_km"         "winter_section"         
+# [10] "spring_section"          "summer_section"          "winter_designation"     
+# [13] "spring_designation"      "summer_designation"      "mn_upstream_km"         
+# [16] "mn_winter_upstream_km"   "mn_spring_upstream_km"   "mn_summer_upstream_km"  
+# [19] "winter_section_orig"     "spring_section_orig"     "summer_section_orig"    
+# [22] "winter_designation_orig" "spring_designation_orig" "summer_designation_orig"
+# [25] "winterFid"               "springFid"               "summerFid"              
+# [28] "winterFid2"              "springFid2"              "summerFid2"
