@@ -1,3 +1,17 @@
+# Script 5: By-Individual Analysis
+# Matt Tyers, August 2024
+
+# The purpose of this script is to look for relationships between individual-level
+# variables (using the dataframe constructed in Script 4).  
+
+# THIS IS NOT INTENDED AS BIOMETRICALLY ROBUST YET.  Rather, the output from this
+# script should be interpreted as an exploratory data analysis (EDA), in which
+# all reasonable pairwise relationships between variables are VISUALIZED.
+
+# In addition to automated EDA plots, seasonal fidelity is explored and visualized
+# using empirical CDF plots, and a summary table is created.
+
+
 source("R_code/4_beaver_cr_ByIndividual.R")
 
 write_output <- FALSE  # whether to write figures & tables to external file
@@ -41,8 +55,13 @@ by_indiv$winter_designation <- sorter(by_indiv$winter_designation)
 by_indiv$spring_designation <- sorter(by_indiv$spring_designation)
 by_indiv$summer_designation <- sorter(by_indiv$summer_designation)
 
+
+
+## initial plot of all variables with respect to one another
 plot(by_indiv[,-c(1,3,19:24)])
 
+
+## a first try at more appropriate plots of variables wrt one another
 numerics <- c("numeric","integer","array")
 factors <- c("character","factor")
 magicplot <- function(x,y,...) {
@@ -90,7 +109,7 @@ hist(by_indiv$summersummer_km/by_indiv$homerange_km, main="summer/hr")
 
 
 
-# plot ecdf of seasonal fidelity (probably overlay?)
+# Plots of empirical CDF of seasonal fidelity (expressed as distance)
 
 if(write_output) {
   png(filename="R_output/FidelityCDF.png",
@@ -117,6 +136,10 @@ if(write_output) {
   dev.off()
 }
 
+
+
+# Plots of empirical CDF of seasonal fidelity (expressed as fraction of homerange)
+
 if(write_output) {
   png(filename="R_output/FidelityCDF_2.png",
       width=8, height=6, units="in", res=300)
@@ -142,9 +165,9 @@ if(write_output) {
   dev.off()
 }
 
-# table of median seasonal distances, and maybe 20/80% quantiles?
-# table of median dist/hr & quantiles?
-# table of <=3km, <=15km??
+
+
+# Constructing a summary table of fidelity
 
 fidelity_tab <- 
   data.frame(med_dist_km = 
@@ -172,17 +195,20 @@ colnames(fidelity_tab) <- c("Median Distance (rkm)",
                             "Proportion < 5% of Homerange")
 fidelity_tab
 if(write_output) {
-  write.csv(fidelity_tab, file="R_output/Fidelity_tab.csv")
+  write.csv(fidelity_tab, file="R_output/Tables/Fidelity_tab.csv")
 }
 
-# plot <=3km, <=15km ~ stuff
-# model <=3km, <=15km ~ stuff
+
+
+
+# re-expressing fidelity (distance) as binned, calculated from distance
 
 breaks <- c(0,3,15,100)
 by_indiv$winterFid <- cut(by_indiv$winterwinter_km, breaks=breaks, include.lowest = TRUE)
 by_indiv$springFid <- cut(by_indiv$springspring_km, breaks=breaks, include.lowest = TRUE)
 by_indiv$summerFid <- cut(by_indiv$summersummer_km, breaks=breaks, include.lowest = TRUE)
 
+# looking at binned fidelity wrt other variables
 these <- c(2, 4, 5, 9:18, 25:27)
 for(i in 25:27) {
   par(mfrow=c(4,4))
@@ -192,6 +218,10 @@ for(i in 25:27) {
   }
 }
 
+
+
+# re-expressing fidelity (distance) as binned, calculated from frac of homerange
+
 breaks <- c(0,0.05,0.2,1)
 by_indiv$winterFid2 <- cut(by_indiv$winterwinter_km/by_indiv$homerange_km, 
                            breaks=breaks, include.lowest = TRUE)
@@ -200,6 +230,7 @@ by_indiv$springFid2 <- cut(by_indiv$springspring_km/by_indiv$homerange_km,
 by_indiv$summerFid2 <- cut(by_indiv$summersummer_km/by_indiv$homerange_km, 
                            breaks=breaks, include.lowest = TRUE)
 
+# looking at binned fidelity wrt other variables
 these <- c(2, 4, 5, 9:18, 28:30)
 for(i in 28:30) {
   par(mfrow=c(4,4))
@@ -210,8 +241,8 @@ for(i in 28:30) {
 }
 
 
-#### this is getting silly, let's just look at all reasonable relationships one by one
 
+## FINAL VERSION - plotting all variables with respect to one another
 
 magicplot2 <- function(x,y,xlab,ylab,logy) {
   if(class(x) %in% numerics & class(y) %in% numerics) {
@@ -246,6 +277,7 @@ magicplot2 <- function(x,y,xlab,ylab,logy) {
   }
 }
 
+# simplifying categories to take up less space in plots
 for(i in 9:11) {
   xx <- by_indiv[,i]
   xx[xx=="Lower"] <- "Lwr"
@@ -261,13 +293,15 @@ for(i in 12:14) {
   by_indiv[,i] <- factor(xx, levels=c("Main","Trib","Head"))
 }
 
+# defining which variables (by index) to plot as X vs Y
 xid <- c(2,9:14,15:18)
 yid <- c(4:8,25:30)#,15:18
+
+# defining which Y variables (by index) to plot on log scale
 logy <- rep(FALSE, 30)
 logy[4:8] <- TRUE
 
-# scipen <- options("scipen")
-# options(scipen=10000)
+## actually making all the plots!
 plotcount <- 1
 for(j in yid) {
   if(write_output) {
@@ -298,7 +332,7 @@ for(i in xid[-1]) {
 if(write_output) {
   dev.off()
 }
-# options(scipen=scipen)
+
 
 
 

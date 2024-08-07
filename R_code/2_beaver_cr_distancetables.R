@@ -111,8 +111,8 @@ upstreamseq_seasonal_summary$p_down <- paste0(round(p_down, 2), " (",
                                          round(se_p_down, 2), ")")
 
 if(write_output) {
-  write.csv(upstreamseq_all_summary, file = "R_output/directional_dist_bysurvey.csv")
-  write.csv(upstreamseq_seasonal_summary, file = "R_output/directional_dist_byseason.csv")
+  write.csv(upstreamseq_all_summary, file = "R_output/Tables/directional_dist_bysurvey.csv")
+  write.csv(upstreamseq_seasonal_summary, file = "R_output/Tables/directional_dist_byseason.csv")
 }
 
 

@@ -172,5 +172,5 @@ for(i in 1:nrow(seasonal_locs_widelist$seg)) {
 
 
 if(write_output) {
-  write.csv(by_indiv, file="R_output/ByIndividual.csv")
+  write.csv(by_indiv, file="R_output/Tables/ByIndividual.csv")
 }

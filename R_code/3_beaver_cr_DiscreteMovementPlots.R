@@ -240,7 +240,7 @@ season_section$p_Headwaters <- paste0(round(p_Headwaters, 2), " (",
 rownames(season_section) <- datelabels
 season_section
 if(write_output){
-  write.csv(season_section, file="R_output/Section_bySeason.csv")
+  write.csv(season_section, file="R_output/Tables/Section_bySeason.csv")
 }
 
 
@@ -264,7 +264,7 @@ season_des$p_Headwaters <- paste0(round(p_Headwaters, 2), " (",
 rownames(season_des) <- datelabels
 season_des
 if(write_output){
-  write.csv(season_des, file="R_output/Designation_bySeason.csv")
+  write.csv(season_des, file="R_output/Tables/Designation_bySeason.csv")
 }
 
 
@@ -294,7 +294,7 @@ survey_section$p_Headwaters <- paste0(round(p_Headwaters, 2), " (",
                                       round(se_Headwaters, 2), ")")
 survey_section
 if(write_output){
-  write.csv(survey_section, file="R_output/Section_bySurvey.csv")
+  write.csv(survey_section, file="R_output/Tables/Section_bySurvey.csv")
 }
 
 
@@ -318,6 +318,6 @@ survey_des$p_Headwaters <- paste0(round(p_Headwaters, 2), " (",
                                   round(se_Headwaters, 2), ")")
 survey_des
 if(write_output){
-  write.csv(survey_des, file="R_output/Designation_bySurvey.csv")
+  write.csv(survey_des, file="R_output/Tables/Designation_bySurvey.csv")
 }
 
