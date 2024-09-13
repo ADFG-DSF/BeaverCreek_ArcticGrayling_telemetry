@@ -129,7 +129,10 @@ all_locs$SurveyDate <- as.Date(ifelse(all_locs$Survey == 0,
 
 # loading data: seasonal aggregations
 # compiling a single dataframe seasonal_locs
-seasonal_locs <- read.csv("R_data/seasonal_consolidation.csv")
+
+# seasonal_locs <- read.csv("R_data/seasonal_consolidation.csv")
+seasonal_locs <- read.csv("R_data/seasonal_consolidation_withtagging.csv")
+
 seasonal_locs_albers <- sf::sf_project(pts=seasonal_locs[,4:3], to=AKalbers)
 plot(beaver_cr_op)
 points(seasonal_locs_albers, pch=16, col=2)
