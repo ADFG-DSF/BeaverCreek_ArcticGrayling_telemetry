@@ -66,16 +66,18 @@ for(i in 1:nrow(by_indiv)) {
   }
 }
 
-by_indiv$winterwinter_km <- NA
-by_indiv$springspring_km <- NA
-by_indiv$summersummer_km <- NA
+by_indiv$winter22winter23_km <- NA
+by_indiv$spring22spring23_km <- NA
+by_indiv$summer21summer22_km <- NA
+by_indiv$summer22summer23_km <- NA
+by_indiv$summer21summer23_km <- NA
 for(i in 1:nrow(seasonal_locs_widelist$seg)) {
   segs <- seasonal_locs_widelist$seg[i,]
   verts <- seasonal_locs_widelist$vert[i,]
 
   # winter-winter distance
   if(!is.na(segs$`1_2022_Overwintering`) & !is.na(segs$`4_2023_Overwintering`)) {
-    by_indiv$winterwinter_km[by_indiv$Fish == rownames(seasonal_locs_widelist$seg)[i]] <-
+    by_indiv$winter22winter23_km[by_indiv$Fish == rownames(seasonal_locs_widelist$seg)[i]] <-
       riverdistance(startseg=segs$`1_2022_Overwintering`,
                                                  endseg=segs$`4_2023_Overwintering`,
                                                  startvert=verts$`1_2022_Overwintering`,
@@ -85,7 +87,7 @@ for(i in 1:nrow(seasonal_locs_widelist$seg)) {
 
   # spring-spring distance
   if(!is.na(segs$`2_2022_Spring_Spawning`) & !is.na(segs$`5_2023_Spring_Spawning`)) {
-    by_indiv$springspring_km[by_indiv$Fish == rownames(seasonal_locs_widelist$seg)[i]] <-
+    by_indiv$spring22spring23_km[by_indiv$Fish == rownames(seasonal_locs_widelist$seg)[i]] <-
       riverdistance(startseg=segs$`2_2022_Spring_Spawning`,
                                                  endseg=segs$`5_2023_Spring_Spawning`,
                                                  startvert=verts$`2_2022_Spring_Spawning`,
@@ -94,13 +96,29 @@ for(i in 1:nrow(seasonal_locs_widelist$seg)) {
   }
 
   # summer-summer distance
+  if(!is.na(segs$`0_2021_Tagging`) & !is.na(segs$`3_2022_Oversummering`)) {
+    by_indiv$summer21summer22_km[by_indiv$Fish == rownames(seasonal_locs_widelist$seg)[i]] <-
+      riverdistance(startseg=segs$`0_2021_Tagging`,
+                    endseg=segs$`3_2022_Oversummering`,
+                    startvert=verts$`0_2021_Tagging`,
+                    endvert=verts$`3_2022_Oversummering`,
+                    rivers=beaver_cr_op)/1000
+  }
   if(!is.na(segs$`3_2022_Oversummering`) & !is.na(segs$`6_2023_Oversummering`)) {
-    by_indiv$summersummer_km[by_indiv$Fish == rownames(seasonal_locs_widelist$seg)[i]] <-
+    by_indiv$summer22summer23_km[by_indiv$Fish == rownames(seasonal_locs_widelist$seg)[i]] <-
       riverdistance(startseg=segs$`3_2022_Oversummering`,
-                                                 endseg=segs$`6_2023_Oversummering`,
-                                                 startvert=verts$`3_2022_Oversummering`,
-                                                 endvert=verts$`6_2023_Oversummering`,
-                                                 rivers=beaver_cr_op)/1000
+                    endseg=segs$`6_2023_Oversummering`,
+                    startvert=verts$`3_2022_Oversummering`,
+                    endvert=verts$`6_2023_Oversummering`,
+                    rivers=beaver_cr_op)/1000
+  }
+  if(!is.na(segs$`0_2021_Tagging`) & !is.na(segs$`6_2023_Oversummering`)) {
+    by_indiv$summer21summer23_km[by_indiv$Fish == rownames(seasonal_locs_widelist$seg)[i]] <-
+      riverdistance(startseg=segs$`0_2021_Tagging`,
+                    endseg=segs$`6_2023_Oversummering`,
+                    startvert=verts$`0_2021_Tagging`,
+                    endvert=verts$`6_2023_Oversummering`,
+                    rivers=beaver_cr_op)/1000
   }
 }
 
@@ -129,22 +147,22 @@ for(i in 1:nrow(seasonal_locs_widelist$seg)) {
   des <- substr(seasonal_locs_widelist$mainstem[i,], 3,99)
   
   by_indiv$winter_section[by_indiv$Fish == rownames(seasonal_locs_widelist$seg)[i]] <-
-    collapser(sort(unique(sec[c(1,4)][!is.na(sec[c(1,4)])])))
+    collapser(sort(unique(sec[1 + c(1,4)][!is.na(sec[1 + c(1,4)])])))
   
   by_indiv$winter_designation[by_indiv$Fish == rownames(seasonal_locs_widelist$seg)[i]] <-
-    collapser(sort(unique(des[c(1,4)][!is.na(des[c(1,4)])])))
+    collapser(sort(unique(des[1 + c(1,4)][!is.na(des[1 + c(1,4)])])))
   
   by_indiv$spring_section[by_indiv$Fish == rownames(seasonal_locs_widelist$seg)[i]] <-
-    collapser(sort(unique(sec[c(2,5)][!is.na(sec[c(2,5)])])))
+    collapser(sort(unique(sec[1 + c(2,5)][!is.na(sec[1 + c(2,5)])])))
   
   by_indiv$spring_designation[by_indiv$Fish == rownames(seasonal_locs_widelist$seg)[i]] <-
-    collapser(sort(unique(des[c(2,5)][!is.na(des[c(2,5)])])))
+    collapser(sort(unique(des[1 + c(2,5)][!is.na(des[1 + c(2,5)])])))
   
   by_indiv$summer_section[by_indiv$Fish == rownames(seasonal_locs_widelist$seg)[i]] <-
-    collapser(sort(unique(sec[c(3,6)][!is.na(sec[c(3,6)])])))
+    collapser(sort(unique(sec[1 + c(0,3,6)][!is.na(sec[1 + c(0,3,6)])])))  # was c(3,6)
   
   by_indiv$summer_designation[by_indiv$Fish == rownames(seasonal_locs_widelist$seg)[i]] <-
-    collapser(sort(unique(des[c(3,6)][!is.na(des[c(3,6)])])))
+    collapser(sort(unique(des[1 + c(0,3,6)][!is.na(des[1 + c(0,3,6)])])))  # was c(3,6)
 }
 
 
@@ -161,13 +179,13 @@ by_indiv$mn_spring_upstream_km <- NA
 by_indiv$mn_summer_upstream_km <- NA
 for(i in 1:nrow(seasonal_locs_widelist$seg)) {
   by_indiv$mn_winter_upstream_km[by_indiv$Fish == rownames(seasonal_locs_widelist$seg)[i]] <-
-    mean(unlist(seasonal_locs_widelist$upstream_km[i, c(1,4)]), na.rm=TRUE)
+    mean(unlist(seasonal_locs_widelist$upstream_km[i, 1 + c(1,4)]), na.rm=TRUE)
   
   by_indiv$mn_spring_upstream_km[by_indiv$Fish == rownames(seasonal_locs_widelist$seg)[i]] <-
-    mean(unlist(seasonal_locs_widelist$upstream_km[i, c(2,5)]), na.rm=TRUE)
+    mean(unlist(seasonal_locs_widelist$upstream_km[i, 1 + c(2,5)]), na.rm=TRUE)
   
   by_indiv$mn_summer_upstream_km[by_indiv$Fish == rownames(seasonal_locs_widelist$seg)[i]] <-
-    mean(unlist(seasonal_locs_widelist$upstream_km[i, c(3,6)]), na.rm=TRUE)
+    mean(unlist(seasonal_locs_widelist$upstream_km[i, 1 + c(0,3,6)]), na.rm=TRUE)  # was c(3,6)
 }
 
 

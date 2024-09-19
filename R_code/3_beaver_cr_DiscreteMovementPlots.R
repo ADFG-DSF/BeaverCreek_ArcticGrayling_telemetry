@@ -20,7 +20,8 @@ write_output <- FALSE  # whether to write figures & tables to external file
 
 
 
-datelabels <- c("2022 Overwintering",
+datelabels <- c("2021 Tagging",
+                "2022 Overwintering",
                 "2022 Spring Spawning",
                 "2022 Oversummering",
                 "2023 Overwintering",

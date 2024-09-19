@@ -1,6 +1,6 @@
 source("R_code/1_beaver_cr_data.R")  # loading data
 
-write_output <- TRUE  # whether to write figures & tables to external file
+write_output <- FALSE  # whether to write figures & tables to external file
 
 
 
@@ -10,7 +10,7 @@ dens1 <- with(seasonal_locs,
                                rivers=beaver_cr_op,
                                # kernel = "rect", 
                                bw=10000))
-mains <- c("2022 Overwintering",   "2022 Spring Spawning", "2022 Oversummering",  
+mains <- c("2021 Tagging",   "2022 Overwintering",   "2022 Spring Spawning", "2022 Oversummering",  
            "2023 Overwintering",   "2023 Spring Spawning", "2023 Oversummering")
 
 if(write_output) {
@@ -20,20 +20,23 @@ if(write_output) {
 par(mfrow=c(2,3))
 par(mar=c(2,2,4,1))
 par(family="serif")
-plot(dens1, scalebyN = FALSE, main=mains, yaxt="n", xaxt="n", scalebar=FALSE)
+plot(dens1, whichplots=2:length(dens1),
+     scalebyN = FALSE, main=mains, yaxt="n", xaxt="n", scalebar=FALSE)
 if(write_output) {
   dev.off()
 }
 
 
 # calculate difference from avg density, create new density object!
+# NOTE: dens1 now has tagging, which we don't want, so we want 
+# $densities objects 2-7 instead of 1-6
 nseason <- unname(table(seasonal_locs$Season))
 weights <- mean(nseason)/nseason
 meandens <- list()
 for(i_segment in 1:length(dens1$densities[[1]])) {
   meandens[[i_segment]] <- NA
   for(i_vertex in 1:length(dens1$densities[[1]][[i_segment]])) {
-    meandens[[i_segment]][i_vertex] <- mean(c(dens1$densities[[1]][[i_segment]][i_vertex],
+    meandens[[i_segment]][i_vertex] <- mean(c(dens1$densities[[7]][[i_segment]][i_vertex],
                                             dens1$densities[[2]][[i_segment]][i_vertex],
                                             dens1$densities[[3]][[i_segment]][i_vertex],
                                             dens1$densities[[4]][[i_segment]][i_vertex],
@@ -70,7 +73,8 @@ if(write_output) {
 par(mfrow=c(2,3))
 par(mar=c(2,2,4,1))
 par(family="serif")
-plot(densitydiffs_negative, ramp="blue", linecol = "grey", 
+plot(densitydiffs_negative, whichplots=2:length(dens1),
+     ramp="blue", linecol = "grey", 
      main=mains, yaxt="n", xaxt="n", scalebar=FALSE)#, scalebyN = FALSE)
 if(write_output) {
   dev.off()
@@ -83,7 +87,8 @@ if(write_output) {
 par(mfrow=c(2,3))
 par(mar=c(2,2,4,1))
 par(family="serif")
-plot(densitydiffs_positive, ramp="red", linecol = "grey", 
+plot(densitydiffs_positive, whichplots=2:length(dens1),
+     ramp="red", linecol = "grey", 
      main=mains, yaxt="n", xaxt="n", scalebar=FALSE)#, scalebyN = FALSE)
 if(write_output) {
   dev.off()
@@ -98,7 +103,8 @@ y <- seasonal_locs_widelist$snap_y
 # seg <- seasonal_locs_widelist$seg
 # vert <- seasonal_locs_widelist$vert
 ups <- seasonal_locs_widelist$upstream_km
-mains <- c("2022 Overwintering to Spring Spawning",
+mains <- c("2021 Tagging to 2022 Overwintering",
+           "2022 Overwintering to Spring Spawning",
            "2022 Spring Spawning to Oversummering",
            "2022 Oversummering to 2023 Overwintering",
            "2023 Overwintering to Spring Spawning",
@@ -111,7 +117,7 @@ if(write_output) {
 par(mfrow=c(2,3))
 par(mar=c(2,2,4,2))
 par(family="serif")
-for(j in 1:5) {
+for(j in 1:6) {
   plot(beaver_cr_op, empty = TRUE, linecol="grey", main=mains[j], yaxt="n", xaxt="n")
   # for(i in 1:nrow(segs)) {
   #   points(seg = segs[i, j+0:1], vert = verts[i, j+0:1])
@@ -127,3 +133,4 @@ for(j in 1:5) {
 if(write_output) {
   dev.off()
 }
+
