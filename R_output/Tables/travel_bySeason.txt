@@ -1,0 +1,872 @@
+Seasonal Locations
+
+Fish 11:
+0_2021_Tagging to 1_2022_Overwintering: 92.40407 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 4.600139 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0.08176062 rkm
+3_2022_Oversummering to 5_2023_Spring_Spawning: 0.602879 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 1.638457 rkm
+
+Fish 12:
+0_2021_Tagging to 1_2022_Overwintering: 46.0443 rkm
+
+Fish 13:
+0_2021_Tagging to 1_2022_Overwintering: 38.31981 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 6.893661 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 31.43379 rkm
+
+Fish 14:
+0_2021_Tagging to 1_2022_Overwintering: 39.87651 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 4.953948 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 44.83045 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 41.70997 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 5.389817 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 12.30986 rkm
+
+Fish 15:
+0_2021_Tagging to 1_2022_Overwintering: 42.28524 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 0.07755602 rkm
+
+Fish 16:
+0_2021_Tagging to 1_2022_Overwintering: 8.702518 rkm
+
+Fish 17:
+0_2021_Tagging to 1_2022_Overwintering: 45.74281 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 39.06708 rkm
+
+Fish 18:
+0_2021_Tagging to 1_2022_Overwintering: 28.8311 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 0 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0.2205114 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.1188358 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0.2393472 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0.1272259 rkm
+
+Fish 19:
+0_2021_Tagging to 1_2022_Overwintering: 16.51335 rkm
+1_2022_Overwintering to 3_2022_Oversummering: 10.91365 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 35.21843 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 68.24589 rkm
+
+Fish 20:
+
+Fish 21:
+0_2021_Tagging to 1_2022_Overwintering: 38.81811 rkm
+1_2022_Overwintering to 3_2022_Oversummering: 0.3369989 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.9657188 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 7.936894 rkm
+
+Fish 22:
+0_2021_Tagging to 1_2022_Overwintering: 39.04324 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 24.63399 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 10.78673 rkm
+
+Fish 23:
+0_2021_Tagging to 1_2022_Overwintering: 13.30378 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 4.245123 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 6.549008 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.01620782 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0.3517892 rkm
+
+Fish 24:
+0_2021_Tagging to 1_2022_Overwintering: 30.27228 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 43.02529 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 66.93519 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 19.16721 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0.3027692 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0.1877138 rkm
+
+Fish 25:
+0_2021_Tagging to 1_2022_Overwintering: 101.5472 rkm
+
+Fish 26:
+0_2021_Tagging to 1_2022_Overwintering: 18.51984 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 50.41094 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 68.83852 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.1146781 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0.1877479 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0.5410789 rkm
+
+Fish 27:
+0_2021_Tagging to 1_2022_Overwintering: 39.75868 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 7.008322 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 6.825308 rkm
+
+Fish 28:
+0_2021_Tagging to 1_2022_Overwintering: 69.91678 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 4.478281 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 35.80938 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 2.155493 rkm
+
+Fish 29:
+0_2021_Tagging to 1_2022_Overwintering: 136.772 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 41.88489 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 164.843 rkm
+3_2022_Oversummering to 5_2023_Spring_Spawning: 158.0869 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 144.1509 rkm
+
+Fish 30:
+0_2021_Tagging to 1_2022_Overwintering: 54.63017 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 1.965009 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 55.14498 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 52.19051 rkm
+
+Fish 31:
+0_2021_Tagging to 1_2022_Overwintering: 33.54927 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 25.01951 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 58.60508 rkm
+
+Fish 32:
+0_2021_Tagging to 1_2022_Overwintering: 25.98572 rkm
+
+Fish 33:
+0_2021_Tagging to 1_2022_Overwintering: 21.2212 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 58.17879 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 94.95686 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 43.82939 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 30.20916 rkm
+
+Fish 34:
+0_2021_Tagging to 1_2022_Overwintering: 60.34665 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 2.235814 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 2.857528 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.09903368 rkm
+
+Fish 35:
+0_2021_Tagging to 1_2022_Overwintering: 24.91318 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 0.1583679 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0.4397693 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.3474834 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0.3211676 rkm
+
+Fish 36:
+0_2021_Tagging to 1_2022_Overwintering: 46.24761 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 2.260054 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 24.68598 rkm
+3_2022_Oversummering to 5_2023_Spring_Spawning: 0.2870149 rkm
+
+Fish 37:
+0_2021_Tagging to 1_2022_Overwintering: 129.796 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 3.75399 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 125.9448 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 130.5937 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0.9514657 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 96.9514 rkm
+
+Fish 38:
+0_2021_Tagging to 1_2022_Overwintering: 63.44833 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 6.174614 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 57.03765 rkm
+3_2022_Oversummering to 5_2023_Spring_Spawning: 55.34817 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 55.47615 rkm
+
+Fish 39:
+0_2021_Tagging to 1_2022_Overwintering: 29.29184 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 33.51262 rkm
+
+Fish 40:
+0_2021_Tagging to 1_2022_Overwintering: 26.8146 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 16.68677 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 9.796337 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 24.91603 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 11.00915 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 13.96547 rkm
+
+Fish 41:
+0_2021_Tagging to 1_2022_Overwintering: 32.59119 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 13.63142 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 18.95977 rkm
+3_2022_Oversummering to 5_2023_Spring_Spawning: 0.07352104 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0.2462599 rkm
+
+Fish 42:
+0_2021_Tagging to 1_2022_Overwintering: 24.76798 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 8.166378 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 33.22573 rkm
+3_2022_Oversummering to 5_2023_Spring_Spawning: 31.01014 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 30.51341 rkm
+
+Fish 43:
+0_2021_Tagging to 1_2022_Overwintering: 0.2975921 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 1.762493 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 1.372653 rkm
+
+Fish 44:
+0_2021_Tagging to 1_2022_Overwintering: 18.03038 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 0 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0.03568323 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.7197597 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0.09131376 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0.8467567 rkm
+
+Fish 45:
+0_2021_Tagging to 1_2022_Overwintering: 19.65044 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 7.454052 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 26.8936 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 19.75405 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0.4618918 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0.3020112 rkm
+
+Fish 46:
+0_2021_Tagging to 1_2022_Overwintering: 17.60155 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 43.61417 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 61.79055 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 20.24902 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 46.75282 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 66.42702 rkm
+
+Fish 47:
+0_2021_Tagging to 1_2022_Overwintering: 17.06916 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 7.417324 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0.04952803 rkm
+3_2022_Oversummering to 5_2023_Spring_Spawning: 60.1061 rkm
+
+Fish 48:
+0_2021_Tagging to 1_2022_Overwintering: 50.25595 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 22.83891 rkm
+
+Fish 49:
+0_2021_Tagging to 1_2022_Overwintering: 71.01292 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 18.35455 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 89.36746 rkm
+3_2022_Oversummering to 5_2023_Spring_Spawning: 82.71272 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 83.37388 rkm
+
+Fish 50:
+0_2021_Tagging to 1_2022_Overwintering: 6.508096 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 12.14741 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 13.06792 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 2.394559 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0.7301936 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0.1408204 rkm
+
+Fish 51:
+0_2021_Tagging to 1_2022_Overwintering: 0.8614872 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 0.9605206 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0.9605206 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.3211676 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0.4134536 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0.014879 rkm
+
+Fish 52:
+0_2021_Tagging to 1_2022_Overwintering: 6.512391 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 6.34101 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0.1626611 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 7.219993 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 7.490959 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0.2858454 rkm
+
+Fish 53:
+0_2021_Tagging to 1_2022_Overwintering: 0.5872902 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 0.06020562 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0.2211676 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.6206087 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0.04951165 rkm
+
+Fish 54:
+0_2021_Tagging to 1_2022_Overwintering: 13.21928 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 38.42843 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 94.48282 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 49.78721 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 48.49642 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 88.00298 rkm
+
+Fish 55:
+0_2021_Tagging to 1_2022_Overwintering: 24.25492 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 25.86737 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 52.65017 rkm
+3_2022_Oversummering to 5_2023_Spring_Spawning: 1.801753 rkm
+
+Fish 56:
+0_2021_Tagging to 1_2022_Overwintering: 4.470612 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 0.5533013 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 8.246949 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 10.50799 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 6.178349 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 6.70978 rkm
+
+Fish 57:
+0_2021_Tagging to 1_2022_Overwintering: 17.95982 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 5.636426 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 11.35385 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 14.33431 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 12.805 rkm
+
+Fish 58:
+0_2021_Tagging to 1_2022_Overwintering: 17.21723 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 2.503221 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 15.66845 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.2825282 rkm
+4_2023_Overwintering to 6_2023_Oversummering: 2.389345 rkm
+
+Fish 59:
+0_2021_Tagging to 1_2022_Overwintering: 11.50289 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 31.69747 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 43.38116 rkm
+
+Fish 60:
+
+Fish 61:
+0_2021_Tagging to 1_2022_Overwintering: 0.3075448 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 1.530357 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 1.245699 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.8302219 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0.7372968 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0.09292519 rkm
+
+Fish 62:
+0_2021_Tagging to 1_2022_Overwintering: 2.32772 rkm
+
+Fish 63:
+0_2021_Tagging to 1_2022_Overwintering: 2.244406 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 37.23309 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 42.42758 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.5843761 rkm
+
+Fish 64:
+0_2021_Tagging to 1_2022_Overwintering: 0.6629704 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 0.1437681 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0.5192023 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.1995368 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0.4912553 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0.1917185 rkm
+
+Fish 65:
+0_2021_Tagging to 1_2022_Overwintering: 9.588201 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 0.2587347 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0.3033639 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.5836194 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0.6800806 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0.6800806 rkm
+
+Fish 66:
+0_2021_Tagging to 1_2022_Overwintering: 0.1089193 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 11.87451 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 10.6603 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.7551833 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0.151073 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0.3878451 rkm
+
+Fish 67:
+0_2021_Tagging to 1_2022_Overwintering: 1.094736 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 0.84463 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0.9197511 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.1751211 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0.2585403 rkm
+
+Fish 68:
+0_2021_Tagging to 1_2022_Overwintering: 16.88929 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 12.59246 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 5.313073 rkm
+
+Fish 69:
+0_2021_Tagging to 1_2022_Overwintering: 10.69909 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 11.35977 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 17.04367 rkm
+
+Fish 70:
+0_2021_Tagging to 1_2022_Overwintering: 0.6501357 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 0.895703 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0.2455673 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.1 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0.3455673 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0.2455673 rkm
+
+Fish 71:
+0_2021_Tagging to 1_2022_Overwintering: 7.628181 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 4.877267 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 17.09646 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 13.22698 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 34.39464 rkm
+
+Fish 72:
+0_2021_Tagging to 1_2022_Overwintering: 27.04631 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 29.58994 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 41.60071 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 53.84709 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 34.94112 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 19.98487 rkm
+
+Fish 73:
+0_2021_Tagging to 4_2023_Overwintering: 79.81606 rkm
+
+Fish 74:
+0_2021_Tagging to 3_2022_Oversummering: 11.13157 rkm
+
+Fish 75:
+0_2021_Tagging to 1_2022_Overwintering: 7.14475 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 20.16139 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 12.78014 rkm
+3_2022_Oversummering to 5_2023_Spring_Spawning: 26.78107 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 27.25471 rkm
+
+Fish 76:
+0_2021_Tagging to 1_2022_Overwintering: 0.976922 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 0.2007444 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0.2007444 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.3274624 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0.2666676 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0.0991012 rkm
+
+Fish 77:
+
+Fish 78:
+0_2021_Tagging to 1_2022_Overwintering: 2.441183 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 0.5704611 rkm
+
+Fish 79:
+0_2021_Tagging to 1_2022_Overwintering: 0.4835545 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 6.05013 rkm
+2_2022_Spring_Spawning to 4_2023_Overwintering: 0 rkm
+
+Fish 80:
+0_2021_Tagging to 1_2022_Overwintering: 3.011644 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 4.537167 rkm
+
+Fish 81:
+0_2021_Tagging to 1_2022_Overwintering: 24.64588 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 1.997613 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 26.80224 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 24.14078 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 4.067182 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 27.94922 rkm
+
+Fish 82:
+
+Fish 83:
+0_2021_Tagging to 1_2022_Overwintering: 2.567414 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 2.667414 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0.267264 rkm
+
+Fish 84:
+0_2021_Tagging to 1_2022_Overwintering: 3.676048 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 14.33782 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 11.26331 rkm
+3_2022_Oversummering to 5_2023_Spring_Spawning: 11.15606 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 10.81304 rkm
+
+Fish 85:
+0_2021_Tagging to 1_2022_Overwintering: 109.1361 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 15.01516 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 127.467 rkm
+3_2022_Oversummering to 5_2023_Spring_Spawning: 133.9564 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 133.8554 rkm
+
+Fish 86:
+0_2021_Tagging to 1_2022_Overwintering: 18.35063 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 1.196532 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0.07743208 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.06010977 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0 rkm
+
+Fish 87:
+0_2021_Tagging to 1_2022_Overwintering: 10.87286 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 10.77286 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0.1 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 11.10151 rkm
+
+Fish 88:
+0_2021_Tagging to 1_2022_Overwintering: 0.5147584 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 0.07728445 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0.3631494 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.7661537 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0.5661537 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0.4858649 rkm
+
+Fish 89:
+0_2021_Tagging to 1_2022_Overwintering: 11.90162 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 12.00579 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0.7964473 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.4631494 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0.04530409 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0.1225885 rkm
+
+Fish 91:
+0_2021_Tagging to 1_2022_Overwintering: 44.87149 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 0 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 48.1392 rkm
+3_2022_Oversummering to 6_2023_Oversummering: 0.07574733 rkm
+
+Fish 92:
+0_2021_Tagging to 1_2022_Overwintering: 6.308535 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 10.41901 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 22.92263 rkm
+
+Fish 93:
+0_2021_Tagging to 1_2022_Overwintering: 55.67144 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 0.3256414 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0.5843761 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.1625225 rkm
+
+Fish 94:
+0_2021_Tagging to 1_2022_Overwintering: 0.9637943 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 12.50695 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 29.97937 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 17.18402 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 12.54772 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 30.60637 rkm
+
+Fish 95:
+0_2021_Tagging to 1_2022_Overwintering: 0.9730634 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 10.68645 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 17.45174 rkm
+3_2022_Oversummering to 5_2023_Spring_Spawning: 0.7940519 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0.2640174 rkm
+
+Fish 96:
+0_2021_Tagging to 1_2022_Overwintering: 0.4177235 rkm
+
+Fish 97:
+0_2021_Tagging to 1_2022_Overwintering: 3.322433 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 7.398784 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 8.760283 rkm
+
+Fish 98:
+0_2021_Tagging to 1_2022_Overwintering: 13.20376 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 2.26423 rkm
+2_2022_Spring_Spawning to 5_2023_Spring_Spawning: 0.5541156 rkm
+
+Fish 99:
+0_2021_Tagging to 1_2022_Overwintering: 10.95039 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 54.62712 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 65.99337 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0.1 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0.03379498 rkm
+
+Fish 100:
+0_2021_Tagging to 1_2022_Overwintering: 0.315862 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 2.74526 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 2.611465 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.3303363 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0.2609757 rkm
+
+Fish 101:
+0_2021_Tagging to 5_2023_Spring_Spawning: 122.9005 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 126.2038 rkm
+
+Fish 102:
+0_2021_Tagging to 1_2022_Overwintering: 1.405726 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 0 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0.004474119 rkm
+
+Fish 103:
+0_2021_Tagging to 1_2022_Overwintering: 1.629119 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 1.564349 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 4.703668 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 3.80443 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 2.29423 rkm
+
+Fish 104:
+0_2021_Tagging to 1_2022_Overwintering: 6.525772 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 4.350451 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 2.959204 rkm
+
+Fish 105:
+0_2021_Tagging to 1_2022_Overwintering: 1.978906 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 1.858652 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0.1 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.2943032 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 2.140242 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 1.856698 rkm
+
+Fish 106:
+0_2021_Tagging to 1_2022_Overwintering: 2.291533 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 2.511787 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0.1 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 2.261624 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 1.859135 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0.05425726 rkm
+
+Fish 107:
+0_2021_Tagging to 1_2022_Overwintering: 21.94171 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 8.906162 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 13.03554 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 21.94171 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0.3010726 rkm
+
+Fish 108:
+0_2021_Tagging to 1_2022_Overwintering: 8.716409 rkm
+1_2022_Overwintering to 3_2022_Oversummering: 0.1269853 rkm
+3_2022_Oversummering to 5_2023_Spring_Spawning: 0.4230865 rkm
+
+Fish 109:
+0_2021_Tagging to 1_2022_Overwintering: 5.075887 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 5.456959 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 7.922757 rkm
+
+Fish 110:
+0_2021_Tagging to 1_2022_Overwintering: 10.74111 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 4.068515 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 6.975457 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 11.59353 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 1.612475 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 10.12921 rkm
+
+Fish 111:
+0_2021_Tagging to 1_2022_Overwintering: 2.702609 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 2.032561 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0.6700479 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.1525664 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 5.32244 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 5.32244 rkm
+
+Fish 112:
+0_2021_Tagging to 1_2022_Overwintering: 1.575286 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 2.03756 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0.1127317 rkm
+
+Fish 113:
+0_2021_Tagging to 1_2022_Overwintering: 1.016251 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 0.8636846 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0.2525664 rkm
+3_2022_Oversummering to 5_2023_Spring_Spawning: 0.323971 rkm
+
+Fish 114:
+0_2021_Tagging to 1_2022_Overwintering: 51.49448 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 31.55383 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 77.18258 rkm
+3_2022_Oversummering to 5_2023_Spring_Spawning: 75.42862 rkm
+
+Fish 115:
+0_2021_Tagging to 2_2022_Spring_Spawning: 8.039847 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 7.474905 rkm
+3_2022_Oversummering to 5_2023_Spring_Spawning: 3.975783 rkm
+
+Fish 116:
+0_2021_Tagging to 1_2022_Overwintering: 3.282868 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 9.315516 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 12.36243 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 3.046917 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0.2032875 rkm
+
+Fish 117:
+0_2021_Tagging to 1_2022_Overwintering: 0.2359507 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 0.7161062 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 1.00328 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 4.315256 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 3.457671 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0.4599024 rkm
+
+Fish 118:
+0_2021_Tagging to 1_2022_Overwintering: 8.306446 rkm
+1_2022_Overwintering to 3_2022_Oversummering: 0.1525664 rkm
+3_2022_Oversummering to 5_2023_Spring_Spawning: 0.1525664 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0.2 rkm
+
+Fish 119:
+0_2021_Tagging to 1_2022_Overwintering: 1.774056 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 1.037493 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0.1 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.1219698 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0.3048583 rkm
+
+Fish 120:
+0_2021_Tagging to 1_2022_Overwintering: 0.005417728 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 1.979337 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 2.079337 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0.1587958 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0.1587958 rkm
+
+Fish 121:
+0_2021_Tagging to 1_2022_Overwintering: 2.62085 rkm
+
+Fish 122:
+0_2021_Tagging to 1_2022_Overwintering: 1.057389 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 3.947554 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 3.257847 rkm
+
+Fish 123:
+
+Fish 124:
+0_2021_Tagging to 1_2022_Overwintering: 26.59706 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 0 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0.1773614 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.4383593 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0.8071193 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 1.197542 rkm
+
+Fish 125:
+0_2021_Tagging to 1_2022_Overwintering: 1.272874 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 32.7198 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 33.89267 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 1.210629 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 32.96844 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 34.12938 rkm
+
+Fish 126:
+0_2021_Tagging to 1_2022_Overwintering: 107.7745 rkm
+1_2022_Overwintering to 3_2022_Oversummering: 107.6562 rkm
+3_2022_Oversummering to 5_2023_Spring_Spawning: 137.4402 rkm
+
+Fish 127:
+0_2021_Tagging to 1_2022_Overwintering: 0.7803924 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 38.44874 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 30.43233 rkm
+
+Fish 128:
+0_2021_Tagging to 1_2022_Overwintering: 0.11828 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 0.6771786 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 1.033259 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.3560801 rkm
+
+Fish 129:
+0_2021_Tagging to 1_2022_Overwintering: 4.800207 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 6.809645 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 11.74017 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 5.219885 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 7.912718 rkm
+
+Fish 130:
+0_2021_Tagging to 1_2022_Overwintering: 5.657213 rkm
+
+Fish 131:
+0_2021_Tagging to 1_2022_Overwintering: 70.72614 rkm
+1_2022_Overwintering to 3_2022_Oversummering: 71.00077 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 78.86483 rkm
+
+Fish 132:
+
+Fish 133:
+0_2021_Tagging to 1_2022_Overwintering: 17.23946 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 4.872078 rkm
+2_2022_Spring_Spawning to 4_2023_Overwintering: 4.200873 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 3.950804 rkm
+
+Fish 134:
+0_2021_Tagging to 1_2022_Overwintering: 4.008093 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 3.684327 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0 rkm
+3_2022_Oversummering to 5_2023_Spring_Spawning: 4.827955 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 5.035218 rkm
+
+Fish 135:
+0_2021_Tagging to 1_2022_Overwintering: 118.4184 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 28.46603 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 88.56571 rkm
+3_2022_Oversummering to 5_2023_Spring_Spawning: 72.9786 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 1.619075 rkm
+
+Fish 136:
+0_2021_Tagging to 1_2022_Overwintering: 80.3684 rkm
+
+Fish 137:
+
+Fish 138:
+
+Fish 139:
+0_2021_Tagging to 1_2022_Overwintering: 17.87752 rkm
+
+Fish 140:
+
+Fish 141:
+0_2021_Tagging to 1_2022_Overwintering: 48.77178 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 46.45155 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 95.34483 rkm
+3_2022_Oversummering to 5_2023_Spring_Spawning: 96.99656 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 94.0637 rkm
+
+Fish 142:
+
+Fish 143:
+
+Fish 144:
+0_2021_Tagging to 1_2022_Overwintering: 102.1541 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 0.170888 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.2603882 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0.1603882 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0.1817606 rkm
+
+Fish 145:
+0_2021_Tagging to 1_2022_Overwintering: 47.52365 rkm
+
+Fish 146:
+0_2021_Tagging to 1_2022_Overwintering: 43.3967 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 0.7559893 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 1.360314 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.5735862 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0.4008594 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0.2131456 rkm
+
+Fish 147:
+
+Fish 148:
+0_2021_Tagging to 1_2022_Overwintering: 47.53586 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 40.84999 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 7.57047 rkm
+
+Fish 149:
+0_2021_Tagging to 1_2022_Overwintering: 82.39363 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 8.293836 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 52.53158 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.70238 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0.2275464 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0.2275464 rkm
+
+Fish 150:
+0_2021_Tagging to 1_2022_Overwintering: 73.23321 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 23.06424 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 51.91052 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.2872097 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0.2841593 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0.3883427 rkm
+
+Fish 151:
+0_2021_Tagging to 1_2022_Overwintering: 47.91273 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 28.45287 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 76.53396 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 59.33108 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 52.48427 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 111.6131 rkm
+
+Fish 152:
+0_2021_Tagging to 1_2022_Overwintering: 62.87979 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 25.87015 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 94.78027 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 66.5069 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 3.399463 rkm
+
+Fish 153:
+
+Fish 154:
+0_2021_Tagging to 1_2022_Overwintering: 82.72569 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 13.16244 rkm
+
+Fish 155:
+0_2021_Tagging to 1_2022_Overwintering: 46.91493 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 5.595107 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 47.22778 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 41.63267 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 8.320665 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 26.11253 rkm
+
+Fish 156:
+0_2021_Tagging to 1_2022_Overwintering: 46.00599 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 0.1493945 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0.1011297 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 0.1322101 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 0.8227082 rkm
+
+Fish 157:
+
+Fish 158:
+0_2021_Tagging to 1_2022_Overwintering: 58.87011 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 28.10119 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 17.70376 rkm
+
+Fish 159:
+0_2021_Tagging to 1_2022_Overwintering: 49.7173 rkm
+1_2022_Overwintering to 2_2022_Spring_Spawning: 3.896012 rkm
+2_2022_Spring_Spawning to 3_2022_Oversummering: 0.2381889 rkm
+3_2022_Oversummering to 4_2023_Overwintering: 1.103655 rkm
+4_2023_Overwintering to 5_2023_Spring_Spawning: 1.103655 rkm
+5_2023_Spring_Spawning to 6_2023_Oversummering: 0.3587003 rkm
+
+Fish 160:
+0_2021_Tagging to 1_2022_Overwintering: 23.09243 rkm

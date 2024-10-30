@@ -192,3 +192,82 @@ for(i in 1:nrow(seasonal_locs_widelist$seg)) {
 if(write_output) {
   write.csv(by_indiv, file="R_output/Tables/ByIndividual.csv")
 }
+
+
+
+travel_bySurvey <- riverdistanceseq(unique=all_locs$Fish,
+                                    survey=all_locs$Survey,
+                                    seg=all_locs$seg,
+                                    vert=all_locs$vert,
+                                    rivers=beaver_cr_op) / 1000 # convert to km
+travel_bySeason <- riverdistanceseq(unique=seasonal_locs$Fish,
+                                    survey=seasonal_locs$Season,
+                                    seg=seasonal_locs$seg,
+                                    vert=seasonal_locs$vert,
+                                    rivers=beaver_cr_op) / 1000 # convert to km
+
+## looking at why bySurvey has fewer row numbers
+## It's because there are no sequential surveys (0, 2, 6, 8, 12, 14)
+rownames(travel_bySeason)[!rownames(travel_bySeason) %in% rownames(travel_bySurvey)]
+rownames(travel_bySurvey)[!rownames(travel_bySurvey) %in% rownames(travel_bySeason)]
+
+seasonal_locs %>% filter(Fish %in% c("118", "136"))
+all_locs %>% filter(Fish %in% c("118", "136"))
+
+if(write_output) {
+  write.csv(travel_bySurvey, file="R_output/Tables/travel_bySurvey.csv")
+  write.csv(travel_bySeason, file="R_output/Tables/travel_bySeason.csv")
+}
+
+
+## by-fish travel narratives
+
+if(write_output) {
+cat("All Surveys", sep="", 
+    file="R_output/Tables/travel_bySurvey.txt", append=FALSE)
+for(i in 1:nrow(by_indiv)) {
+  # grab vectors of locations ONLY when observed
+  segs <- all_locs_widelist$seg[i,][!is.na(all_locs_widelist$seg[i,])]
+  verts <- all_locs_widelist$vert[i,][!is.na(all_locs_widelist$vert[i,])]
+  surveys <- names(all_locs_widelist$seg[i,])[!is.na(all_locs_widelist$seg[i,])]
+  
+  cat("\n", "\n", "Fish ", by_indiv$Fish[i], ":",  sep="", 
+      file="R_output/Tables/travel_bySurvey.txt", append=TRUE)
+  
+  if(length(segs) > 1) {
+    for(j in 2:length(segs)) {
+      cat("\n",
+          surveys[j-1], " to ", surveys[j], ": ", sep="", 
+          file="R_output/Tables/travel_bySurvey.txt", append=TRUE)
+      cat(riverdistance(startseg = segs[j-1], endseg=segs[j],
+                        startvert = verts[j-1], endvert=verts[j],
+                        rivers = beaver_cr_op)/1000, "rkm",
+          file="R_output/Tables/travel_bySurvey.txt", append=TRUE)
+    }
+  }
+}
+
+cat("Seasonal Locations", sep="", 
+    file="R_output/Tables/travel_bySeason.txt", append=FALSE)
+for(i in 1:nrow(by_indiv)) {
+  # grab vectors of locations ONLY when observed
+  segs <- seasonal_locs_widelist$seg[i,][!is.na(seasonal_locs_widelist$seg[i,])]
+  verts <- seasonal_locs_widelist$vert[i,][!is.na(seasonal_locs_widelist$vert[i,])]
+  surveys <- names(seasonal_locs_widelist$seg[i,])[!is.na(seasonal_locs_widelist$seg[i,])]
+  
+  cat("\n", "\n", "Fish ", by_indiv$Fish[i], ":",  sep="", 
+      file="R_output/Tables/travel_bySeason.txt", append=TRUE)
+  
+  if(length(segs) > 1) {
+    for(j in 2:length(segs)) {
+      cat("\n",
+          surveys[j-1], " to ", surveys[j], ": ", sep="", 
+          file="R_output/Tables/travel_bySeason.txt", append=TRUE)
+      cat(riverdistance(startseg = segs[j-1], endseg=segs[j],
+                        startvert = verts[j-1], endvert=verts[j],
+                        rivers = beaver_cr_op)/1000, "rkm",
+          file="R_output/Tables/travel_bySeason.txt", append=TRUE)
+    }
+  }
+}
+}
